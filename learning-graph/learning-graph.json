@@ -1,0 +1,3459 @@
+{
+  "metadata": {
+    "title": "AI for Investor Relations Transformation",
+    "description": "A comprehensive learning graph covering investor relations fundamentals, AI technologies, data governance, regulatory compliance, and strategic transformation for IR professionals and executives.",
+    "creator": "David Berglund",
+    "date": "2025-11-05",
+    "version": "2.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "AGENTIC": {
+      "color": {
+        "classifierName": "Agentic AI Systems",
+        "color": "#6366f1",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "AI-CONT": {
+      "color": {
+        "classifierName": "AI Content Creation",
+        "color": "#8b5cf6",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "AI-GOV": {
+      "color": {
+        "classifierName": "AI Governance",
+        "color": "#a855f7",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "AI-TECH": {
+      "color": {
+        "classifierName": "AI Technology",
+        "color": "#ec4899",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "ANLYT": {
+      "color": {
+        "classifierName": "Analytics & Predictions",
+        "color": "#06b6d4",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "DATA-GOV": {
+      "color": {
+        "classifierName": "Data Governance",
+        "color": "#10b981",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "INVEST": {
+      "color": {
+        "classifierName": "Investor Types",
+        "color": "#f59e0b",
+        "font": {
+          "color": "black"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "IR-FOUND": {
+      "color": {
+        "classifierName": "IR Foundations",
+        "color": "#ef4444",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "IR-OPS": {
+      "color": {
+        "classifierName": "IR Operations",
+        "color": "#f97316",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "REG-COMP": {
+      "color": {
+        "classifierName": "Regulatory Compliance",
+        "color": "#84cc16",
+        "font": {
+          "color": "black"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "TRANSFORM": {
+      "color": {
+        "classifierName": "Transformation & Strategy",
+        "color": "#3b82f6",
+        "font": {
+          "color": "white"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    },
+    "VALMET": {
+      "color": {
+        "classifierName": "Valuation Metrics",
+        "color": "#eab308",
+        "font": {
+          "color": "black"
+        }
+      },
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Investor Relations Function",
+      "group": "IR-FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Corporate Valuation Strategy",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Market Communication Strategy",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Earnings Reporting Process",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 5,
+      "label": "Investor Targeting Methods",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 6,
+      "label": "Q&A Preparation Techniques",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 7,
+      "label": "Institutional Investors",
+      "group": "INVEST",
+      "shape": "box"
+    },
+    {
+      "id": 8,
+      "label": "Retail Investors",
+      "group": "INVEST",
+      "shape": "box"
+    },
+    {
+      "id": 9,
+      "label": "Hedge Funds",
+      "group": "INVEST"
+    },
+    {
+      "id": 10,
+      "label": "Mutual Funds",
+      "group": "INVEST"
+    },
+    {
+      "id": 11,
+      "label": "Pension Funds",
+      "group": "INVEST"
+    },
+    {
+      "id": 12,
+      "label": "Sovereign Wealth Funds",
+      "group": "INVEST"
+    },
+    {
+      "id": 13,
+      "label": "Buy-Side Analysts",
+      "group": "INVEST"
+    },
+    {
+      "id": 14,
+      "label": "Sell-Side Analysts",
+      "group": "INVEST"
+    },
+    {
+      "id": 15,
+      "label": "Investment Bank Relations",
+      "group": "INVEST"
+    },
+    {
+      "id": 16,
+      "label": "Shareholder Engagement",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Proxy Season Management",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 18,
+      "label": "Annual General Meetings",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 19,
+      "label": "Investor Presentations",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 20,
+      "label": "Roadshow Planning",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 21,
+      "label": "Earnings Call Scripts",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 22,
+      "label": "Press Release Drafting",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 23,
+      "label": "Material Information",
+      "group": "REG-COMP",
+      "shape": "box"
+    },
+    {
+      "id": 24,
+      "label": "Nonpublic Information",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 25,
+      "label": "Regulation Fair Disclosure",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 26,
+      "label": "Reg FD Compliance",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 27,
+      "label": "Preventing Selective Disclosure",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 28,
+      "label": "Sarbanes-Oxley Act",
+      "group": "REG-COMP",
+      "shape": "box"
+    },
+    {
+      "id": 29,
+      "label": "SOX Section 302",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 30,
+      "label": "SOX Section 404",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 31,
+      "label": "Internal Control Systems",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 32,
+      "label": "Disclosure Controls",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 33,
+      "label": "SEC Filing Requirements",
+      "group": "REG-COMP",
+      "shape": "box"
+    },
+    {
+      "id": 34,
+      "label": "Form 10-K Overview",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 35,
+      "label": "Form 10-Q Essentials",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 36,
+      "label": "Form 8-K Summary",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 37,
+      "label": "XBRL Reporting Standards",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 38,
+      "label": "MD&A Requirements",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 39,
+      "label": "Risk Factor Disclosures",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 40,
+      "label": "Forward-Looking Statements",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 41,
+      "label": "Safe Harbor Provisions",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 42,
+      "label": "Materiality Assessment",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 43,
+      "label": "Disclosure Timing Rules",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 44,
+      "label": "Quiet Period Guidelines",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 45,
+      "label": "Trading Window Rules",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 46,
+      "label": "Blackout Period Management",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 47,
+      "label": "Insider Trading Rules",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 48,
+      "label": "Stock Price Volatility",
+      "group": "VALMET",
+      "shape": "box"
+    },
+    {
+      "id": 49,
+      "label": "Market Liquidity Trends",
+      "group": "VALMET"
+    },
+    {
+      "id": 50,
+      "label": "Trading Volume Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 51,
+      "label": "Ownership Concentration",
+      "group": "VALMET"
+    },
+    {
+      "id": 52,
+      "label": "Shareholder Base Analysis",
+      "group": "VALMET"
+    },
+    {
+      "id": 53,
+      "label": "Peer Benchmarking Tools",
+      "group": "VALMET"
+    },
+    {
+      "id": 54,
+      "label": "Valuation Multiples",
+      "group": "VALMET"
+    },
+    {
+      "id": 55,
+      "label": "P/E Ratio Insights",
+      "group": "VALMET"
+    },
+    {
+      "id": 56,
+      "label": "Enterprise Value Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 57,
+      "label": "Shareholder Return Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 58,
+      "label": "Market Capitalization",
+      "group": "VALMET"
+    },
+    {
+      "id": 59,
+      "label": "Analyst Coverage Review",
+      "group": "INVEST"
+    },
+    {
+      "id": 60,
+      "label": "Consensus Estimates",
+      "group": "INVEST"
+    },
+    {
+      "id": 61,
+      "label": "Earnings Guidance Strategy",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 62,
+      "label": "Guidance Withdrawal Risks",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 63,
+      "label": "Setting Guidance Ranges",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 64,
+      "label": "Beat-and-Raise Tactics",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 65,
+      "label": "AI Fundamentals",
+      "group": "AI-TECH",
+      "shape": "box"
+    },
+    {
+      "id": 66,
+      "label": "Machine Learning Basics",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 67,
+      "label": "Large Language Models",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 68,
+      "label": "Generative AI Tools",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 69,
+      "label": "Prompt Engineering Skills",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 70,
+      "label": "AI for Content Creation",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 71,
+      "label": "GenAI Earnings Reports",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 72,
+      "label": "AI-Enhanced Press Releases",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 73,
+      "label": "Drafting Investor Memos",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 74,
+      "label": "Narrative Consistency",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 75,
+      "label": "Tone Analysis Tools",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 76,
+      "label": "Compliance Review Tools",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 77,
+      "label": "AI Governance Models",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 78,
+      "label": "Developing AI Policy",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 79,
+      "label": "Responsible AI Practices",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 80,
+      "label": "AI Ethics for Finance",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 81,
+      "label": "Recognizing Hallucinations",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 82,
+      "label": "Detecting Hallucinations",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 83,
+      "label": "Reducing Hallucinations",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 84,
+      "label": "Recognizing AI Bias",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 85,
+      "label": "Bias in Financial Data",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 86,
+      "label": "Mitigating AI Bias",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 87,
+      "label": "Algorithmic Bias Risk",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 88,
+      "label": "Detecting Model Drift",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 89,
+      "label": "Managing Model Drift",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 90,
+      "label": "Monitoring AI Models",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 91,
+      "label": "Sentiment Analysis Tools",
+      "group": "ANLYT"
+    },
+    {
+      "id": 92,
+      "label": "Natural Language Processing",
+      "group": "ANLYT"
+    },
+    {
+      "id": 93,
+      "label": "Text Mining Methods",
+      "group": "ANLYT"
+    },
+    {
+      "id": 94,
+      "label": "Monitoring Social Media",
+      "group": "ANLYT"
+    },
+    {
+      "id": 95,
+      "label": "News Sentiment Analysis",
+      "group": "ANLYT"
+    },
+    {
+      "id": 96,
+      "label": "Analyst Report Insights",
+      "group": "ANLYT"
+    },
+    {
+      "id": 97,
+      "label": "Analyzing Feedback",
+      "group": "ANLYT"
+    },
+    {
+      "id": 98,
+      "label": "Sentiment Scoring Models",
+      "group": "ANLYT"
+    },
+    {
+      "id": 99,
+      "label": "Real-Time Sentiment Data",
+      "group": "ANLYT"
+    },
+    {
+      "id": 100,
+      "label": "Predictive Analytics",
+      "group": "ANLYT"
+    },
+    {
+      "id": 101,
+      "label": "Forecasting Investor Behavior",
+      "group": "ANLYT"
+    },
+    {
+      "id": 102,
+      "label": "Predicting Market Response",
+      "group": "ANLYT"
+    },
+    {
+      "id": 103,
+      "label": "Modeling Investor Behavior",
+      "group": "ANLYT"
+    },
+    {
+      "id": 104,
+      "label": "Trading Pattern Analysis",
+      "group": "ANLYT"
+    },
+    {
+      "id": 105,
+      "label": "Algorithmic Trading Impact",
+      "group": "ANLYT"
+    },
+    {
+      "id": 106,
+      "label": "High-Frequency Trading",
+      "group": "ANLYT"
+    },
+    {
+      "id": 107,
+      "label": "Market Microstructure",
+      "group": "ANLYT"
+    },
+    {
+      "id": 108,
+      "label": "Providing Liquidity",
+      "group": "ANLYT"
+    },
+    {
+      "id": 109,
+      "label": "Analyzing Order Flow",
+      "group": "ANLYT"
+    },
+    {
+      "id": 110,
+      "label": "Time-Sensitive Disclosures",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 111,
+      "label": "Agentic AI Systems",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 112,
+      "label": "Autonomous AI Agents",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 113,
+      "label": "Agent Orchestration",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 114,
+      "label": "Multi-Agent Coordination",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 115,
+      "label": "Agent-Based IR Workflows",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 116,
+      "label": "Model Context Protocol",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 117,
+      "label": "MCP Architecture Overview",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 118,
+      "label": "MCP Security Standards",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 119,
+      "label": "MCP Integration Paths",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 120,
+      "label": "Agents for Data Retrieval",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 121,
+      "label": "Integrating Live Data",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 122,
+      "label": "AI Briefing Generation",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 123,
+      "label": "Automated Report Tools",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 124,
+      "label": "AI-Driven Dashboards",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 125,
+      "label": "Designing Dashboards",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 126,
+      "label": "Key Performance Indicators",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 127,
+      "label": "IR Engagement Metrics",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 128,
+      "label": "Tracking Investor Outreach",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 129,
+      "label": "Meeting Effectiveness",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 130,
+      "label": "Response Time Analytics",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 131,
+      "label": "Data Governance Basics",
+      "group": "DATA-GOV",
+      "shape": "box"
+    },
+    {
+      "id": 132,
+      "label": "Managing Data Quality",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 133,
+      "label": "Tracking Data Lineage",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 134,
+      "label": "Financial Data Privacy",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 135,
+      "label": "Protecting Personal Data",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 136,
+      "label": "Data Security Standards",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 137,
+      "label": "Encryption Best Practices",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 138,
+      "label": "Access Control Models",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 139,
+      "label": "Role-Based Access",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 140,
+      "label": "Audit Trail Requirements",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 141,
+      "label": "Managing Audit Logs",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 142,
+      "label": "Compliance Monitoring",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 143,
+      "label": "RegTech Applications",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 144,
+      "label": "Compliance Automation",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 145,
+      "label": "Automated Risk Monitoring",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 146,
+      "label": "Risk Management Frameworks",
+      "group": "DATA-GOV",
+      "shape": "box"
+    },
+    {
+      "id": 147,
+      "label": "Assessing Risk Exposure",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 148,
+      "label": "Mitigating IR Risk",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 149,
+      "label": "Third-Party Risk Strategy",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 150,
+      "label": "Vendor Risk Controls",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 151,
+      "label": "Evaluating AI Vendors",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 152,
+      "label": "Vendor Due Diligence",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 153,
+      "label": "Procuring AI Solutions",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 154,
+      "label": "Build vs. Buy Choices",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 155,
+      "label": "Selecting AI Tools",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 156,
+      "label": "Proof of Concept Design",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 157,
+      "label": "Designing Pilot Programs",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 158,
+      "label": "Change Management Plans",
+      "group": "TRANSFORM",
+      "shape": "box"
+    },
+    {
+      "id": 159,
+      "label": "Change Management Models",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 160,
+      "label": "Stakeholder Identification",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 161,
+      "label": "Stakeholder Mapping",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 162,
+      "label": "Cross-Functional Teams",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 163,
+      "label": "C-Suite Communications",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 164,
+      "label": "Storytelling with Data",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 165,
+      "label": "Developing Narratives",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 166,
+      "label": "Building a Business Case",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 167,
+      "label": "Calculating AI ROI",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 168,
+      "label": "Cost-Benefit Analysis",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 169,
+      "label": "Tracking Value Realization",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 170,
+      "label": "AI Transformation Strategy",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 171,
+      "label": "Roadmap Prioritization",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 172,
+      "label": "Phased Implementation",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 173,
+      "label": "Identifying Quick Wins",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 174,
+      "label": "Milestone Planning",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 175,
+      "label": "Defining Success Metrics",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 176,
+      "label": "Operating Model Design",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 177,
+      "label": "IR Operating Framework",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 178,
+      "label": "Process Redesign Plans",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 179,
+      "label": "Workflow Automation",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 180,
+      "label": "Identifying Automation Gains",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 181,
+      "label": "Human-in-the-Loop Models",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 182,
+      "label": "Review Workflows",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 183,
+      "label": "Escalation Workflows",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 184,
+      "label": "Handling Exceptions",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 185,
+      "label": "Talent Strategy Planning",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 186,
+      "label": "Skills Gap Evaluation",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 187,
+      "label": "Designing Training Programs",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 188,
+      "label": "Building AI Literacy",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 189,
+      "label": "Launching Upskilling Plans",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 190,
+      "label": "Boosting Digital Fluency",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 191,
+      "label": "Understanding Tech Adoption",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 192,
+      "label": "User Acceptance Testing",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 193,
+      "label": "Feedback Loop Design",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 194,
+      "label": "Driving Improvement Cycles",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 195,
+      "label": "Capturing Lessons Learned",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 196,
+      "label": "Documenting Best Practices",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 197,
+      "label": "Knowledge Sharing Systems",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 198,
+      "label": "Selecting IR Platforms",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 199,
+      "label": "Integrating Enterprise AI",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 200,
+      "label": "IR Transformation Plan",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 201,
+      "label": "Trading Volume Analysis",
+      "group": "VALMET"
+    },
+    {
+      "id": 202,
+      "label": "Analyst Coverage Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 203,
+      "label": "Peer Valuation Benchmark",
+      "group": "VALMET"
+    },
+    {
+      "id": 204,
+      "label": "Market Cap Fluctuations",
+      "group": "VALMET"
+    },
+    {
+      "id": 205,
+      "label": "Beta Risk Measurement",
+      "group": "VALMET"
+    },
+    {
+      "id": 206,
+      "label": "Dividend Yield Trends",
+      "group": "VALMET"
+    },
+    {
+      "id": 207,
+      "label": "Price To Earnings Ratio",
+      "group": "VALMET"
+    },
+    {
+      "id": 208,
+      "label": "Earnings Per Share Growth",
+      "group": "VALMET"
+    },
+    {
+      "id": 209,
+      "label": "Return On Equity Targets",
+      "group": "VALMET"
+    },
+    {
+      "id": 210,
+      "label": "AI Sentiment Tracking",
+      "group": "ANLYT"
+    },
+    {
+      "id": 211,
+      "label": "Predictive IR Analytics",
+      "group": "ANLYT"
+    },
+    {
+      "id": 212,
+      "label": "ML Model Calibration",
+      "group": "ANLYT"
+    },
+    {
+      "id": 213,
+      "label": "NLP For Transcripts",
+      "group": "ANLYT"
+    },
+    {
+      "id": 214,
+      "label": "Big Data Aggregation",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 215,
+      "label": "Q4 Platform Features",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 216,
+      "label": "Nasdaq IR Tools",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 217,
+      "label": "AlphaSense Search",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 218,
+      "label": "Enterprise LLM Usage",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 219,
+      "label": "Sentiment Vendor Tools",
+      "group": "ANLYT"
+    },
+    {
+      "id": 220,
+      "label": "Compliance AI Monitors",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 221,
+      "label": "Crisis AI Assistance",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 222,
+      "label": "Earnings Surprise AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 223,
+      "label": "ESG Automation Tools",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 224,
+      "label": "Proxy AI Support",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 225,
+      "label": "Investor Targeting AI",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 226,
+      "label": "Roadshow Optimization",
+      "group": "ANLYT"
+    },
+    {
+      "id": 227,
+      "label": "Earnings Prep Simulators",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 228,
+      "label": "Guidance AI Forecasting",
+      "group": "ANLYT"
+    },
+    {
+      "id": 229,
+      "label": "Reg FD Compliance AI",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 230,
+      "label": "Materiality AI Assessment",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 231,
+      "label": "Disclosure AI Policies",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 232,
+      "label": "Quiet Period Monitoring",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 233,
+      "label": "Shareholder Activism AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 234,
+      "label": "Proxy Firm Simulations",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 235,
+      "label": "ISS Recommendation AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 236,
+      "label": "Glass Lewis Analysis",
+      "group": "ANLYT"
+    },
+    {
+      "id": 237,
+      "label": "Vote Solicitation Bots",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 238,
+      "label": "Annual Meeting AI",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 239,
+      "label": "Chatbot Query Handling",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 240,
+      "label": "Automated IR Reports",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 241,
+      "label": "Real-Time Data Alerts",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 242,
+      "label": "Anomaly Detection AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 243,
+      "label": "Fraud Prevention Models",
+      "group": "ANLYT"
+    },
+    {
+      "id": 244,
+      "label": "Valuation AI Modeling",
+      "group": "ANLYT"
+    },
+    {
+      "id": 245,
+      "label": "Scenario AI Simulation",
+      "group": "ANLYT"
+    },
+    {
+      "id": 246,
+      "label": "Risk Assessment AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 247,
+      "label": "Portfolio AI Optimization",
+      "group": "ANLYT"
+    },
+    {
+      "id": 248,
+      "label": "Benchmarking Algorithms",
+      "group": "ANLYT"
+    },
+    {
+      "id": 249,
+      "label": "SEC Filing Analytics",
+      "group": "ANLYT"
+    },
+    {
+      "id": 250,
+      "label": "EDGAR Data Mining",
+      "group": "ANLYT"
+    },
+    {
+      "id": 251,
+      "label": "Bloomberg IR Integration",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 252,
+      "label": "FactSet Benchmarking",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 253,
+      "label": "Thomson Reuters Feeds",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 254,
+      "label": "Social Media Analytics",
+      "group": "ANLYT"
+    },
+    {
+      "id": 255,
+      "label": "News Aggregation AI",
+      "group": "AGENTIC"
+    },
+    {
+      "id": 256,
+      "label": "Web Scraping Guidelines",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 257,
+      "label": "GDPR Data Compliance",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 258,
+      "label": "Cybersecurity Protocols",
+      "group": "DATA-GOV"
+    },
+    {
+      "id": 259,
+      "label": "Free Float Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 260,
+      "label": "Institutional Share Trends",
+      "group": "VALMET"
+    },
+    {
+      "id": 261,
+      "label": "Retail Investor Metrics",
+      "group": "VALMET"
+    },
+    {
+      "id": 262,
+      "label": "Short Interest Tracking",
+      "group": "VALMET"
+    },
+    {
+      "id": 263,
+      "label": "Implied Volatility AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 264,
+      "label": "Cost Of Capital Models",
+      "group": "VALMET"
+    },
+    {
+      "id": 265,
+      "label": "WACC AI Calculations",
+      "group": "ANLYT"
+    },
+    {
+      "id": 266,
+      "label": "DCF Valuation Tools",
+      "group": "VALMET"
+    },
+    {
+      "id": 267,
+      "label": "Comparable Company AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 268,
+      "label": "Multiples Analysis AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 269,
+      "label": "Ipreo IR Solutions",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 270,
+      "label": "Broadridge Proxy Tools",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 271,
+      "label": "Computershare Services",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 272,
+      "label": "Intralinks Data Rooms",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 273,
+      "label": "DealCloud IR CRM",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 274,
+      "label": "Salesforce IR Dashboards",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 275,
+      "label": "Tableau IR Visuals",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 276,
+      "label": "Power BI Metrics",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 277,
+      "label": "Python Data Scripts",
+      "group": "ANLYT"
+    },
+    {
+      "id": 278,
+      "label": "R Statistical Analysis",
+      "group": "ANLYT"
+    },
+    {
+      "id": 279,
+      "label": "Tesla IR Case Study",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 280,
+      "label": "Apple Earnings Strategy",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 281,
+      "label": "Amazon Letter Insights",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 282,
+      "label": "Berkshire AGM Lessons",
+      "group": "IR-OPS"
+    },
+    {
+      "id": 283,
+      "label": "Enron Detection Failures",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 284,
+      "label": "VW Scandal Response",
+      "group": "TRANSFORM"
+    },
+    {
+      "id": 285,
+      "label": "Theranos IR Ethics",
+      "group": "REG-COMP"
+    },
+    {
+      "id": 286,
+      "label": "WeWork IPO Analysis",
+      "group": "IR-FOUND"
+    },
+    {
+      "id": 287,
+      "label": "GameStop Squeeze AI",
+      "group": "ANLYT"
+    },
+    {
+      "id": 288,
+      "label": "Bitcoin ETF Monitoring",
+      "group": "ANLYT"
+    },
+    {
+      "id": 289,
+      "label": "Generative Script AI",
+      "group": "AI-CONT"
+    },
+    {
+      "id": 290,
+      "label": "Voice Tone Analysis",
+      "group": "ANLYT"
+    },
+    {
+      "id": 291,
+      "label": "Facial Ethics In IR",
+      "group": "AI-GOV"
+    },
+    {
+      "id": 292,
+      "label": "Deep Learning Forecasts",
+      "group": "ANLYT"
+    },
+    {
+      "id": 293,
+      "label": "Neural Net Predictions",
+      "group": "ANLYT"
+    },
+    {
+      "id": 294,
+      "label": "Reinforcement IR Learning",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 295,
+      "label": "Supervised Data Models",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 296,
+      "label": "Unsupervised Clustering",
+      "group": "AI-TECH"
+    },
+    {
+      "id": 297,
+      "label": "Feature Engineering IR",
+      "group": "ANLYT"
+    },
+    {
+      "id": 298,
+      "label": "Model Training Datasets",
+      "group": "AI-TECH"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 4
+    },
+    {
+      "from": 9,
+      "to": 7
+    },
+    {
+      "from": 10,
+      "to": 7
+    },
+    {
+      "from": 11,
+      "to": 7
+    },
+    {
+      "from": 12,
+      "to": 7
+    },
+    {
+      "from": 13,
+      "to": 7
+    },
+    {
+      "from": 14,
+      "to": 7
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 7
+    },
+    {
+      "from": 16,
+      "to": 8
+    },
+    {
+      "from": 17,
+      "to": 1
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 1
+    },
+    {
+      "from": 18,
+      "to": 16
+    },
+    {
+      "from": 19,
+      "to": 1
+    },
+    {
+      "from": 19,
+      "to": 3
+    },
+    {
+      "from": 20,
+      "to": 1
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 4
+    },
+    {
+      "from": 21,
+      "to": 6
+    },
+    {
+      "from": 22,
+      "to": 3
+    },
+    {
+      "from": 22,
+      "to": 4
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 28
+    },
+    {
+      "from": 31,
+      "to": 28
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 28
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 33
+    },
+    {
+      "from": 36,
+      "to": 33
+    },
+    {
+      "from": 37,
+      "to": 33
+    },
+    {
+      "from": 38,
+      "to": 34
+    },
+    {
+      "from": 39,
+      "to": 34
+    },
+    {
+      "from": 40,
+      "to": 34
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 23
+    },
+    {
+      "from": 42,
+      "to": 33
+    },
+    {
+      "from": 43,
+      "to": 25
+    },
+    {
+      "from": 43,
+      "to": 33
+    },
+    {
+      "from": 44,
+      "to": 25
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 43
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 24
+    },
+    {
+      "from": 47,
+      "to": 45
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 48
+    },
+    {
+      "from": 51,
+      "to": 7
+    },
+    {
+      "from": 51,
+      "to": 8
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 2
+    },
+    {
+      "from": 54,
+      "to": 2
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 54
+    },
+    {
+      "from": 57,
+      "to": 2
+    },
+    {
+      "from": 58,
+      "to": 2
+    },
+    {
+      "from": 59,
+      "to": 13
+    },
+    {
+      "from": 59,
+      "to": 14
+    },
+    {
+      "from": 60,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 4
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 61
+    },
+    {
+      "from": 64,
+      "to": 61
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 68
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 71,
+      "to": 4
+    },
+    {
+      "from": 72,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 22
+    },
+    {
+      "from": 73,
+      "to": 70
+    },
+    {
+      "from": 73,
+      "to": 3
+    },
+    {
+      "from": 74,
+      "to": 3
+    },
+    {
+      "from": 74,
+      "to": 70
+    },
+    {
+      "from": 75,
+      "to": 68
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 68
+    },
+    {
+      "from": 76,
+      "to": 26
+    },
+    {
+      "from": 77,
+      "to": 65
+    },
+    {
+      "from": 78,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 77
+    },
+    {
+      "from": 81,
+      "to": 68
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 84,
+      "to": 66
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 84
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 66
+    },
+    {
+      "from": 89,
+      "to": 88
+    },
+    {
+      "from": 90,
+      "to": 88
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 91,
+      "to": 66
+    },
+    {
+      "from": 92,
+      "to": 66
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 91
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 91
+    },
+    {
+      "from": 95,
+      "to": 93
+    },
+    {
+      "from": 96,
+      "to": 91
+    },
+    {
+      "from": 96,
+      "to": 93
+    },
+    {
+      "from": 97,
+      "to": 91
+    },
+    {
+      "from": 97,
+      "to": 16
+    },
+    {
+      "from": 98,
+      "to": 91
+    },
+    {
+      "from": 99,
+      "to": 91
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 66
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 100
+    },
+    {
+      "from": 103,
+      "to": 100
+    },
+    {
+      "from": 103,
+      "to": 101
+    },
+    {
+      "from": 104,
+      "to": 50
+    },
+    {
+      "from": 104,
+      "to": 100
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 48
+    },
+    {
+      "from": 107,
+      "to": 105
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 107
+    },
+    {
+      "from": 110,
+      "to": 43
+    },
+    {
+      "from": 110,
+      "to": 105
+    },
+    {
+      "from": 111,
+      "to": 66
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 1
+    },
+    {
+      "from": 116,
+      "to": 111
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 112
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 112
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 112
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 68
+    },
+    {
+      "from": 124,
+      "to": 126
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 1
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 127,
+      "to": 16
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 127
+    },
+    {
+      "from": 130,
+      "to": 128
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 131
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 131
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 136
+    },
+    {
+      "from": 139,
+      "to": 138
+    },
+    {
+      "from": 140,
+      "to": 28
+    },
+    {
+      "from": 140,
+      "to": 131
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 26
+    },
+    {
+      "from": 142,
+      "to": 131
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 146
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 148,
+      "to": 146
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 146
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 65
+    },
+    {
+      "from": 152,
+      "to": 150
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 158
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 3
+    },
+    {
+      "from": 163,
+      "to": 158
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 164
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 167
+    },
+    {
+      "from": 169,
+      "to": 167
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 65
+    },
+    {
+      "from": 170,
+      "to": 77
+    },
+    {
+      "from": 170,
+      "to": 158
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 174,
+      "to": 171
+    },
+    {
+      "from": 174,
+      "to": 172
+    },
+    {
+      "from": 175,
+      "to": 126
+    },
+    {
+      "from": 175,
+      "to": 170
+    },
+    {
+      "from": 176,
+      "to": 1
+    },
+    {
+      "from": 176,
+      "to": 170
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 178
+    },
+    {
+      "from": 180,
+      "to": 179
+    },
+    {
+      "from": 181,
+      "to": 112
+    },
+    {
+      "from": 181,
+      "to": 179
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 182
+    },
+    {
+      "from": 184,
+      "to": 182
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 170
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 188,
+      "to": 65
+    },
+    {
+      "from": 189,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 158
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 1
+    },
+    {
+      "from": 198,
+      "to": 155
+    },
+    {
+      "from": 199,
+      "to": 117
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 170
+    },
+    {
+      "from": 200,
+      "to": 176
+    },
+    {
+      "from": 200,
+      "to": 185
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 48
+    },
+    {
+      "from": 201,
+      "to": 50
+    },
+    {
+      "from": 202,
+      "to": 59
+    },
+    {
+      "from": 203,
+      "to": 53
+    },
+    {
+      "from": 203,
+      "to": 54
+    },
+    {
+      "from": 204,
+      "to": 58
+    },
+    {
+      "from": 205,
+      "to": 48
+    },
+    {
+      "from": 206,
+      "to": 57
+    },
+    {
+      "from": 207,
+      "to": 55
+    },
+    {
+      "from": 208,
+      "to": 4
+    },
+    {
+      "from": 208,
+      "to": 57
+    },
+    {
+      "from": 209,
+      "to": 2
+    },
+    {
+      "from": 209,
+      "to": 54
+    },
+    {
+      "from": 210,
+      "to": 91
+    },
+    {
+      "from": 210,
+      "to": 95
+    },
+    {
+      "from": 211,
+      "to": 100
+    },
+    {
+      "from": 211,
+      "to": 101
+    },
+    {
+      "from": 212,
+      "to": 66
+    },
+    {
+      "from": 212,
+      "to": 100
+    },
+    {
+      "from": 213,
+      "to": 92
+    },
+    {
+      "from": 213,
+      "to": 93
+    },
+    {
+      "from": 214,
+      "to": 66
+    },
+    {
+      "from": 214,
+      "to": 132
+    },
+    {
+      "from": 215,
+      "to": 198
+    },
+    {
+      "from": 216,
+      "to": 198
+    },
+    {
+      "from": 217,
+      "to": 93
+    },
+    {
+      "from": 217,
+      "to": 198
+    },
+    {
+      "from": 218,
+      "to": 67
+    },
+    {
+      "from": 218,
+      "to": 199
+    },
+    {
+      "from": 219,
+      "to": 91
+    },
+    {
+      "from": 219,
+      "to": 198
+    },
+    {
+      "from": 220,
+      "to": 76
+    },
+    {
+      "from": 220,
+      "to": 143
+    },
+    {
+      "from": 221,
+      "to": 68
+    },
+    {
+      "from": 221,
+      "to": 148
+    },
+    {
+      "from": 222,
+      "to": 100
+    },
+    {
+      "from": 222,
+      "to": 4
+    },
+    {
+      "from": 223,
+      "to": 68
+    },
+    {
+      "from": 223,
+      "to": 123
+    },
+    {
+      "from": 224,
+      "to": 68
+    },
+    {
+      "from": 224,
+      "to": 17
+    },
+    {
+      "from": 225,
+      "to": 5
+    },
+    {
+      "from": 225,
+      "to": 112
+    },
+    {
+      "from": 226,
+      "to": 20
+    },
+    {
+      "from": 226,
+      "to": 100
+    },
+    {
+      "from": 227,
+      "to": 21
+    },
+    {
+      "from": 227,
+      "to": 68
+    },
+    {
+      "from": 228,
+      "to": 61
+    },
+    {
+      "from": 228,
+      "to": 100
+    },
+    {
+      "from": 229,
+      "to": 26
+    },
+    {
+      "from": 229,
+      "to": 76
+    },
+    {
+      "from": 230,
+      "to": 42
+    },
+    {
+      "from": 230,
+      "to": 76
+    },
+    {
+      "from": 231,
+      "to": 32
+    },
+    {
+      "from": 231,
+      "to": 78
+    },
+    {
+      "from": 232,
+      "to": 44
+    },
+    {
+      "from": 232,
+      "to": 76
+    },
+    {
+      "from": 233,
+      "to": 16
+    },
+    {
+      "from": 233,
+      "to": 100
+    },
+    {
+      "from": 234,
+      "to": 17
+    },
+    {
+      "from": 234,
+      "to": 112
+    },
+    {
+      "from": 235,
+      "to": 17
+    },
+    {
+      "from": 235,
+      "to": 100
+    },
+    {
+      "from": 236,
+      "to": 17
+    },
+    {
+      "from": 236,
+      "to": 93
+    },
+    {
+      "from": 237,
+      "to": 17
+    },
+    {
+      "from": 237,
+      "to": 112
+    },
+    {
+      "from": 238,
+      "to": 18
+    },
+    {
+      "from": 238,
+      "to": 112
+    },
+    {
+      "from": 239,
+      "to": 68
+    },
+    {
+      "from": 239,
+      "to": 92
+    },
+    {
+      "from": 240,
+      "to": 123
+    },
+    {
+      "from": 241,
+      "to": 99
+    },
+    {
+      "from": 241,
+      "to": 121
+    },
+    {
+      "from": 242,
+      "to": 66
+    },
+    {
+      "from": 242,
+      "to": 100
+    },
+    {
+      "from": 243,
+      "to": 100
+    },
+    {
+      "from": 243,
+      "to": 146
+    },
+    {
+      "from": 244,
+      "to": 54
+    },
+    {
+      "from": 244,
+      "to": 100
+    },
+    {
+      "from": 245,
+      "to": 100
+    },
+    {
+      "from": 245,
+      "to": 102
+    },
+    {
+      "from": 246,
+      "to": 146
+    },
+    {
+      "from": 246,
+      "to": 147
+    },
+    {
+      "from": 247,
+      "to": 103
+    },
+    {
+      "from": 247,
+      "to": 105
+    },
+    {
+      "from": 248,
+      "to": 53
+    },
+    {
+      "from": 248,
+      "to": 66
+    },
+    {
+      "from": 249,
+      "to": 33
+    },
+    {
+      "from": 249,
+      "to": 93
+    },
+    {
+      "from": 250,
+      "to": 33
+    },
+    {
+      "from": 250,
+      "to": 93
+    },
+    {
+      "from": 251,
+      "to": 121
+    },
+    {
+      "from": 251,
+      "to": 198
+    },
+    {
+      "from": 252,
+      "to": 53
+    },
+    {
+      "from": 252,
+      "to": 121
+    },
+    {
+      "from": 253,
+      "to": 121
+    },
+    {
+      "from": 253,
+      "to": 198
+    },
+    {
+      "from": 254,
+      "to": 94
+    },
+    {
+      "from": 254,
+      "to": 95
+    },
+    {
+      "from": 255,
+      "to": 95
+    },
+    {
+      "from": 255,
+      "to": 120
+    },
+    {
+      "from": 256,
+      "to": 93
+    },
+    {
+      "from": 256,
+      "to": 131
+    },
+    {
+      "from": 257,
+      "to": 134
+    },
+    {
+      "from": 257,
+      "to": 135
+    },
+    {
+      "from": 258,
+      "to": 136
+    },
+    {
+      "from": 258,
+      "to": 137
+    },
+    {
+      "from": 259,
+      "to": 51
+    },
+    {
+      "from": 259,
+      "to": 52
+    },
+    {
+      "from": 260,
+      "to": 7
+    },
+    {
+      "from": 260,
+      "to": 52
+    },
+    {
+      "from": 261,
+      "to": 8
+    },
+    {
+      "from": 261,
+      "to": 52
+    },
+    {
+      "from": 262,
+      "to": 48
+    },
+    {
+      "from": 262,
+      "to": 51
+    },
+    {
+      "from": 263,
+      "to": 48
+    },
+    {
+      "from": 263,
+      "to": 100
+    },
+    {
+      "from": 264,
+      "to": 2
+    },
+    {
+      "from": 264,
+      "to": 54
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 265,
+      "to": 66
+    },
+    {
+      "from": 266,
+      "to": 2
+    },
+    {
+      "from": 266,
+      "to": 54
+    },
+    {
+      "from": 267,
+      "to": 53
+    },
+    {
+      "from": 267,
+      "to": 100
+    },
+    {
+      "from": 268,
+      "to": 54
+    },
+    {
+      "from": 268,
+      "to": 100
+    },
+    {
+      "from": 269,
+      "to": 198
+    },
+    {
+      "from": 270,
+      "to": 17
+    },
+    {
+      "from": 270,
+      "to": 198
+    },
+    {
+      "from": 271,
+      "to": 198
+    },
+    {
+      "from": 272,
+      "to": 136
+    },
+    {
+      "from": 272,
+      "to": 198
+    },
+    {
+      "from": 273,
+      "to": 128
+    },
+    {
+      "from": 273,
+      "to": 198
+    },
+    {
+      "from": 274,
+      "to": 124
+    },
+    {
+      "from": 274,
+      "to": 198
+    },
+    {
+      "from": 275,
+      "to": 124
+    },
+    {
+      "from": 275,
+      "to": 164
+    },
+    {
+      "from": 276,
+      "to": 124
+    },
+    {
+      "from": 276,
+      "to": 126
+    },
+    {
+      "from": 277,
+      "to": 66
+    },
+    {
+      "from": 277,
+      "to": 214
+    },
+    {
+      "from": 278,
+      "to": 66
+    },
+    {
+      "from": 278,
+      "to": 100
+    },
+    {
+      "from": 279,
+      "to": 1
+    },
+    {
+      "from": 279,
+      "to": 3
+    },
+    {
+      "from": 280,
+      "to": 4
+    },
+    {
+      "from": 280,
+      "to": 61
+    },
+    {
+      "from": 281,
+      "to": 3
+    },
+    {
+      "from": 281,
+      "to": 164
+    },
+    {
+      "from": 282,
+      "to": 18
+    },
+    {
+      "from": 283,
+      "to": 42
+    },
+    {
+      "from": 283,
+      "to": 148
+    },
+    {
+      "from": 284,
+      "to": 148
+    },
+    {
+      "from": 284,
+      "to": 164
+    },
+    {
+      "from": 285,
+      "to": 23
+    },
+    {
+      "from": 285,
+      "to": 80
+    },
+    {
+      "from": 286,
+      "to": 2
+    },
+    {
+      "from": 286,
+      "to": 148
+    },
+    {
+      "from": 287,
+      "to": 48
+    },
+    {
+      "from": 287,
+      "to": 100
+    },
+    {
+      "from": 288,
+      "to": 100
+    },
+    {
+      "from": 288,
+      "to": 110
+    },
+    {
+      "from": 289,
+      "to": 68
+    },
+    {
+      "from": 289,
+      "to": 21
+    },
+    {
+      "from": 290,
+      "to": 75
+    },
+    {
+      "from": 290,
+      "to": 92
+    },
+    {
+      "from": 291,
+      "to": 80
+    },
+    {
+      "from": 291,
+      "to": 164
+    },
+    {
+      "from": 292,
+      "to": 66
+    },
+    {
+      "from": 292,
+      "to": 100
+    },
+    {
+      "from": 293,
+      "to": 66
+    },
+    {
+      "from": 293,
+      "to": 100
+    },
+    {
+      "from": 294,
+      "to": 66
+    },
+    {
+      "from": 294,
+      "to": 101
+    },
+    {
+      "from": 295,
+      "to": 66
+    },
+    {
+      "from": 296,
+      "to": 66
+    },
+    {
+      "from": 297,
+      "to": 66
+    },
+    {
+      "from": 297,
+      "to": 100
+    },
+    {
+      "from": 298,
+      "to": 66
+    },
+    {
+      "from": 298,
+      "to": 132
+    }
+  ]
+}

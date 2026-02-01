@@ -1,0 +1,299 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Investor Relations Function,,IR-FOUND
+2,Corporate Valuation Strategy,1,IR-FOUND
+3,Market Communication Strategy,1,IR-FOUND
+4,Earnings Reporting Process,1|3,IR-OPS
+5,Investor Targeting Methods,1|7,IR-OPS
+6,Q&A Preparation Techniques,1|4,IR-OPS
+7,Institutional Investors,,INVEST
+8,Retail Investors,,INVEST
+9,Hedge Funds,7,INVEST
+10,Mutual Funds,7,INVEST
+11,Pension Funds,7,INVEST
+12,Sovereign Wealth Funds,7,INVEST
+13,Buy-Side Analysts,7,INVEST
+14,Sell-Side Analysts,7,INVEST
+15,Investment Bank Relations,1|14,INVEST
+16,Shareholder Engagement,1|7|8,IR-FOUND
+17,Proxy Season Management,1|16,IR-OPS
+18,Annual General Meetings,1|16,IR-OPS
+19,Investor Presentations,1|3,IR-OPS
+20,Roadshow Planning,1|19,IR-OPS
+21,Earnings Call Scripts,4|6,IR-OPS
+22,Press Release Drafting,3|4,IR-OPS
+23,Material Information,,REG-COMP
+24,Nonpublic Information,23,REG-COMP
+25,Regulation Fair Disclosure,23|24,REG-COMP
+26,Reg FD Compliance,25,REG-COMP
+27,Preventing Selective Disclosure,25|26,REG-COMP
+28,Sarbanes-Oxley Act,,REG-COMP
+29,SOX Section 302,28,REG-COMP
+30,SOX Section 404,28,REG-COMP
+31,Internal Control Systems,28|30,REG-COMP
+32,Disclosure Controls,28|31,REG-COMP
+33,SEC Filing Requirements,,REG-COMP
+34,Form 10-K Overview,33,REG-COMP
+35,Form 10-Q Essentials,33,REG-COMP
+36,Form 8-K Summary,33,REG-COMP
+37,XBRL Reporting Standards,33,REG-COMP
+38,MD&A Requirements,34,REG-COMP
+39,Risk Factor Disclosures,34,REG-COMP
+40,Forward-Looking Statements,34,REG-COMP
+41,Safe Harbor Provisions,40,REG-COMP
+42,Materiality Assessment,23|33,REG-COMP
+43,Disclosure Timing Rules,25|33,REG-COMP
+44,Quiet Period Guidelines,25|43,REG-COMP
+45,Trading Window Rules,43,REG-COMP
+46,Blackout Period Management,45,REG-COMP
+47,Insider Trading Rules,24|45,REG-COMP
+48,Stock Price Volatility,,VALMET
+49,Market Liquidity Trends,48,VALMET
+50,Trading Volume Metrics,48,VALMET
+51,Ownership Concentration,7|8,VALMET
+52,Shareholder Base Analysis,51,VALMET
+53,Peer Benchmarking Tools,2,VALMET
+54,Valuation Multiples,2,VALMET
+55,P/E Ratio Insights,54,VALMET
+56,Enterprise Value Metrics,54,VALMET
+57,Shareholder Return Metrics,2,VALMET
+58,Market Capitalization,2,VALMET
+59,Analyst Coverage Review,13|14,INVEST
+60,Consensus Estimates,59,INVEST
+61,Earnings Guidance Strategy,4|60,IR-OPS
+62,Guidance Withdrawal Risks,61,IR-OPS
+63,Setting Guidance Ranges,61,IR-OPS
+64,Beat-and-Raise Tactics,61,IR-OPS
+65,AI Fundamentals,,AI-TECH
+66,Machine Learning Basics,65,AI-TECH
+67,Large Language Models,66,AI-TECH
+68,Generative AI Tools,67,AI-TECH
+69,Prompt Engineering Skills,68,AI-TECH
+70,AI for Content Creation,68,AI-CONT
+71,GenAI Earnings Reports,70|4,AI-CONT
+72,AI-Enhanced Press Releases,70|22,AI-CONT
+73,Drafting Investor Memos,70|3,AI-CONT
+74,Narrative Consistency,3|70,AI-CONT
+75,Tone Analysis Tools,68|74,AI-CONT
+76,Compliance Review Tools,68|26,AI-CONT
+77,AI Governance Models,65,AI-GOV
+78,Developing AI Policy,77,AI-GOV
+79,Responsible AI Practices,77|78,AI-GOV
+80,AI Ethics for Finance,77,AI-GOV
+81,Recognizing Hallucinations,68,AI-GOV
+82,Detecting Hallucinations,81,AI-GOV
+83,Reducing Hallucinations,82,AI-GOV
+84,Recognizing AI Bias,66,AI-GOV
+85,Bias in Financial Data,84,AI-GOV
+86,Mitigating AI Bias,84|85,AI-GOV
+87,Algorithmic Bias Risk,84|86,AI-GOV
+88,Detecting Model Drift,66,AI-GOV
+89,Managing Model Drift,88,AI-GOV
+90,Monitoring AI Models,88|89,AI-GOV
+91,Sentiment Analysis Tools,66,ANLYT
+92,Natural Language Processing,66,ANLYT
+93,Text Mining Methods,92,ANLYT
+94,Monitoring Social Media,91|93,ANLYT
+95,News Sentiment Analysis,91|93,ANLYT
+96,Analyst Report Insights,91|93,ANLYT
+97,Analyzing Feedback,91|16,ANLYT
+98,Sentiment Scoring Models,91,ANLYT
+99,Real-Time Sentiment Data,91|98,ANLYT
+100,Predictive Analytics,66,ANLYT
+101,Forecasting Investor Behavior,100,ANLYT
+102,Predicting Market Response,100,ANLYT
+103,Modeling Investor Behavior,100|101,ANLYT
+104,Trading Pattern Analysis,50|100,ANLYT
+105,Algorithmic Trading Impact,104,ANLYT
+106,High-Frequency Trading,105,ANLYT
+107,Market Microstructure,48|105,ANLYT
+108,Providing Liquidity,107,ANLYT
+109,Analyzing Order Flow,107,ANLYT
+110,Time-Sensitive Disclosures,43|105,REG-COMP
+111,Agentic AI Systems,66,AGENTIC
+112,Autonomous AI Agents,111,AGENTIC
+113,Agent Orchestration,112,AGENTIC
+114,Multi-Agent Coordination,113,AGENTIC
+115,Agent-Based IR Workflows,113|1,AGENTIC
+116,Model Context Protocol,111,AGENTIC
+117,MCP Architecture Overview,116,AGENTIC
+118,MCP Security Standards,117,AGENTIC
+119,MCP Integration Paths,117,AGENTIC
+120,Agents for Data Retrieval,112,AGENTIC
+121,Integrating Live Data,120,AGENTIC
+122,AI Briefing Generation,112|121,AGENTIC
+123,Automated Report Tools,112|122,AGENTIC
+124,AI-Driven Dashboards,68|126,AGENTIC
+125,Designing Dashboards,124,AGENTIC
+126,Key Performance Indicators,1,IR-FOUND
+127,IR Engagement Metrics,126|16,IR-FOUND
+128,Tracking Investor Outreach,127,IR-FOUND
+129,Meeting Effectiveness,127|128,IR-FOUND
+130,Response Time Analytics,127|128,IR-FOUND
+131,Data Governance Basics,,DATA-GOV
+132,Managing Data Quality,131,DATA-GOV
+133,Tracking Data Lineage,131|132,DATA-GOV
+134,Financial Data Privacy,131,DATA-GOV
+135,Protecting Personal Data,134,DATA-GOV
+136,Data Security Standards,131,DATA-GOV
+137,Encryption Best Practices,136,DATA-GOV
+138,Access Control Models,136,DATA-GOV
+139,Role-Based Access,138,DATA-GOV
+140,Audit Trail Requirements,28|131,DATA-GOV
+141,Managing Audit Logs,140,DATA-GOV
+142,Compliance Monitoring,26|131,DATA-GOV
+143,RegTech Applications,142,DATA-GOV
+144,Compliance Automation,143,DATA-GOV
+145,Automated Risk Monitoring,143|146,DATA-GOV
+146,Risk Management Frameworks,,DATA-GOV
+147,Assessing Risk Exposure,146,DATA-GOV
+148,Mitigating IR Risk,146|147,DATA-GOV
+149,Third-Party Risk Strategy,146,DATA-GOV
+150,Vendor Risk Controls,149,DATA-GOV
+151,Evaluating AI Vendors,149|65,TRANSFORM
+152,Vendor Due Diligence,150|151,TRANSFORM
+153,Procuring AI Solutions,152,TRANSFORM
+154,Build vs. Buy Choices,153,TRANSFORM
+155,Selecting AI Tools,154,TRANSFORM
+156,Proof of Concept Design,155,TRANSFORM
+157,Designing Pilot Programs,156,TRANSFORM
+158,Change Management Plans,,TRANSFORM
+159,Change Management Models,158,TRANSFORM
+160,Stakeholder Identification,158,TRANSFORM
+161,Stakeholder Mapping,160,TRANSFORM
+162,Cross-Functional Teams,160|161,TRANSFORM
+163,C-Suite Communications,3|158,TRANSFORM
+164,Storytelling with Data,163,TRANSFORM
+165,Developing Narratives,164,TRANSFORM
+166,Building a Business Case,164,TRANSFORM
+167,Calculating AI ROI,166,TRANSFORM
+168,Cost-Benefit Analysis,166|167,TRANSFORM
+169,Tracking Value Realization,167|168,TRANSFORM
+170,AI Transformation Strategy,65|77|158,TRANSFORM
+171,Roadmap Prioritization,170,TRANSFORM
+172,Phased Implementation,170|171,TRANSFORM
+173,Identifying Quick Wins,171,TRANSFORM
+174,Milestone Planning,171|172,TRANSFORM
+175,Defining Success Metrics,126|170,TRANSFORM
+176,Operating Model Design,1|170,TRANSFORM
+177,IR Operating Framework,176,TRANSFORM
+178,Process Redesign Plans,176|177,TRANSFORM
+179,Workflow Automation,178,TRANSFORM
+180,Identifying Automation Gains,179,TRANSFORM
+181,Human-in-the-Loop Models,112|179,TRANSFORM
+182,Review Workflows,181,TRANSFORM
+183,Escalation Workflows,182,TRANSFORM
+184,Handling Exceptions,182|183,TRANSFORM
+185,Talent Strategy Planning,170,TRANSFORM
+186,Skills Gap Evaluation,185,TRANSFORM
+187,Designing Training Programs,186,TRANSFORM
+188,Building AI Literacy,187|65,TRANSFORM
+189,Launching Upskilling Plans,187|188,TRANSFORM
+190,Boosting Digital Fluency,188|189,TRANSFORM
+191,Understanding Tech Adoption,158,TRANSFORM
+192,User Acceptance Testing,191,TRANSFORM
+193,Feedback Loop Design,192,TRANSFORM
+194,Driving Improvement Cycles,193,TRANSFORM
+195,Capturing Lessons Learned,194,TRANSFORM
+196,Documenting Best Practices,195,TRANSFORM
+197,Knowledge Sharing Systems,196,TRANSFORM
+198,Selecting IR Platforms,1|155,TRANSFORM
+199,Integrating Enterprise AI,117|198,TRANSFORM
+200,IR Transformation Plan,170|176|185|199,TRANSFORM
+201,Trading Volume Analysis,48|50,VALMET
+202,Analyst Coverage Metrics,59,VALMET
+203,Peer Valuation Benchmark,53|54,VALMET
+204,Market Cap Fluctuations,58,VALMET
+205,Beta Risk Measurement,48,VALMET
+206,Dividend Yield Trends,57,VALMET
+207,Price To Earnings Ratio,55,VALMET
+208,Earnings Per Share Growth,4|57,VALMET
+209,Return On Equity Targets,2|54,VALMET
+210,AI Sentiment Tracking,91|95,ANLYT
+211,Predictive IR Analytics,100|101,ANLYT
+212,ML Model Calibration,66|100,ANLYT
+213,NLP For Transcripts,92|93,ANLYT
+214,Big Data Aggregation,66|132,DATA-GOV
+215,Q4 Platform Features,198,TRANSFORM
+216,Nasdaq IR Tools,198,TRANSFORM
+217,AlphaSense Search,93|198,TRANSFORM
+218,Enterprise LLM Usage,67|199,AI-TECH
+219,Sentiment Vendor Tools,91|198,ANLYT
+220,Compliance AI Monitors,76|143,AI-GOV
+221,Crisis AI Assistance,68|148,AGENTIC
+222,Earnings Surprise AI,100|4,ANLYT
+223,ESG Automation Tools,68|123,AGENTIC
+224,Proxy AI Support,68|17,AGENTIC
+225,Investor Targeting AI,5|112,AGENTIC
+226,Roadshow Optimization,20|100,ANLYT
+227,Earnings Prep Simulators,21|68,AGENTIC
+228,Guidance AI Forecasting,61|100,ANLYT
+229,Reg FD Compliance AI,26|76,AI-GOV
+230,Materiality AI Assessment,42|76,AI-GOV
+231,Disclosure AI Policies,32|78,AI-GOV
+232,Quiet Period Monitoring,44|76,AI-GOV
+233,Shareholder Activism AI,16|100,ANLYT
+234,Proxy Firm Simulations,17|112,AGENTIC
+235,ISS Recommendation AI,17|100,ANLYT
+236,Glass Lewis Analysis,17|93,ANLYT
+237,Vote Solicitation Bots,17|112,AGENTIC
+238,Annual Meeting AI,18|112,AGENTIC
+239,Chatbot Query Handling,68|92,AGENTIC
+240,Automated IR Reports,123,AGENTIC
+241,Real-Time Data Alerts,99|121,AGENTIC
+242,Anomaly Detection AI,66|100,ANLYT
+243,Fraud Prevention Models,100|146,ANLYT
+244,Valuation AI Modeling,54|100,ANLYT
+245,Scenario AI Simulation,100|102,ANLYT
+246,Risk Assessment AI,146|147,ANLYT
+247,Portfolio AI Optimization,103|105,ANLYT
+248,Benchmarking Algorithms,53|66,ANLYT
+249,SEC Filing Analytics,33|93,ANLYT
+250,EDGAR Data Mining,33|93,ANLYT
+251,Bloomberg IR Integration,121|198,TRANSFORM
+252,FactSet Benchmarking,53|121,TRANSFORM
+253,Thomson Reuters Feeds,121|198,TRANSFORM
+254,Social Media Analytics,94|95,ANLYT
+255,News Aggregation AI,95|120,AGENTIC
+256,Web Scraping Guidelines,93|131,DATA-GOV
+257,GDPR Data Compliance,134|135,DATA-GOV
+258,Cybersecurity Protocols,136|137,DATA-GOV
+259,Free Float Metrics,51|52,VALMET
+260,Institutional Share Trends,7|52,VALMET
+261,Retail Investor Metrics,8|52,VALMET
+262,Short Interest Tracking,48|51,VALMET
+263,Implied Volatility AI,48|100,ANLYT
+264,Cost Of Capital Models,2|54,VALMET
+265,WACC AI Calculations,264|66,ANLYT
+266,DCF Valuation Tools,2|54,VALMET
+267,Comparable Company AI,53|100,ANLYT
+268,Multiples Analysis AI,54|100,ANLYT
+269,Ipreo IR Solutions,198,TRANSFORM
+270,Broadridge Proxy Tools,17|198,TRANSFORM
+271,Computershare Services,198,TRANSFORM
+272,Intralinks Data Rooms,136|198,TRANSFORM
+273,DealCloud IR CRM,128|198,TRANSFORM
+274,Salesforce IR Dashboards,124|198,TRANSFORM
+275,Tableau IR Visuals,124|164,TRANSFORM
+276,Power BI Metrics,124|126,TRANSFORM
+277,Python Data Scripts,66|214,ANLYT
+278,R Statistical Analysis,66|100,ANLYT
+279,Tesla IR Case Study,1|3,IR-FOUND
+280,Apple Earnings Strategy,4|61,IR-OPS
+281,Amazon Letter Insights,3|164,IR-FOUND
+282,Berkshire AGM Lessons,18,IR-OPS
+283,Enron Detection Failures,42|148,REG-COMP
+284,VW Scandal Response,148|164,TRANSFORM
+285,Theranos IR Ethics,23|80,REG-COMP
+286,WeWork IPO Analysis,2|148,IR-FOUND
+287,GameStop Squeeze AI,48|100,ANLYT
+288,Bitcoin ETF Monitoring,100|110,ANLYT
+289,Generative Script AI,68|21,AI-CONT
+290,Voice Tone Analysis,75|92,ANLYT
+291,Facial Ethics In IR,80|164,AI-GOV
+292,Deep Learning Forecasts,66|100,ANLYT
+293,Neural Net Predictions,66|100,ANLYT
+294,Reinforcement IR Learning,66|101,AI-TECH
+295,Supervised Data Models,66,AI-TECH
+296,Unsupervised Clustering,66,AI-TECH
+297,Feature Engineering IR,66|100,ANLYT
+298,Model Training Datasets,66|132,AI-TECH

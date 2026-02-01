@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Network Map MicroSim</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        #network-container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .controls h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .filter-item label {
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .legend {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .legend-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
+
+        .info-panel {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .info-panel.active {
+            display: block;
+        }
+
+        .info-panel h4 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Investor Network Map</h1>
+        <p class="description">Interactive visualization of investor types, relationships, and their influence on public companies</p>
+
+        <div id="network-container"></div>
+
+        <div class="controls">
+            <h3>Filter Investor Types</h3>
+            <div class="filter-group" id="filter-checkboxes"></div>
+            <button onclick="resetNetwork()">Reset View</button>
+            <button onclick="layoutNetwork()">Re-layout Network</button>
+        </div>
+
+        <div class="legend">
+            <h3>Investor Types</h3>
+            <div class="legend-items" id="legend-items"></div>
+        </div>
+
+        <div class="info-panel" id="info-panel">
+            <h4 id="info-title">Select a node to see details</h4>
+            <p id="info-content"></p>
+        </div>
+
+        <a href="." class="back-link">Back to Lesson Plan</a>
+    </main>
+
+    <script type="text/javascript">
+        // Define investor types with characteristics
+        const investorTypes = {
+            company: {
+                id: 'company',
+                label: 'Public Company',
+                color: '#FF6B6B',
+                size: 40,
+                description: 'The public company at the center of the investor network, seeking capital and managing shareholder relationships.',
+                type: 'company'
+            },
+            institutional: {
+                id: 'inst-1',
+                label: 'Institutional Investors',
+                color: '#4ECDC4',
+                size: 30,
+                description: 'Large organizations (mutual funds, pension funds, insurance companies) managing assets on behalf of others. Typically hold 60-80% of public company shares.',
+                type: 'institutional'
+            },
+            retail: {
+                id: 'retail-1',
+                label: 'Retail Investors',
+                color: '#95E1D3',
+                size: 25,
+                description: 'Individual investors buying and selling stocks through brokerage accounts. Often influenced by social media and online platforms.',
+                type: 'retail'
+            },
+            activist: {
+                id: 'activist-1',
+                label: 'Activist Investors',
+                color: '#F38181',
+                size: 28,
+                description: 'Investors who acquire significant stakes to influence company strategy, governance, or operations. Push for changes like cost-cutting or strategic pivots.',
+                type: 'activist'
+            },
+            hedge: {
+                id: 'hedge-1',
+                label: 'Hedge Funds',
+                color: '#AA96DA',
+                size: 28,
+                description: 'Alternative investment funds using diverse strategies including long/short equity, arbitrage, and derivatives. More flexible than traditional funds.',
+                type: 'hedge'
+            },
+            sovereign: {
+                id: 'sovereign-1',
+                label: 'Sovereign Wealth Funds',
+                color: '#FCBAD3',
+                size: 26,
+                description: 'State-owned investment funds from resource-rich countries. Take long-term positions with patient capital.',
+                type: 'sovereign'
+            },
+            insider: {
+                id: 'insider-1',
+                label: 'Insiders',
+                color: '#FFFFD2',
+                size: 24,
+                description: 'Company executives, directors, and employees owning company stock. Subject to trading restrictions and disclosure requirements.',
+                type: 'insider'
+            },
+            analyst: {
+                id: 'analyst-1',
+                label: 'Sell-Side Analysts',
+                color: '#A8E6CF',
+                size: 22,
+                description: 'Research analysts at investment banks who publish reports and recommendations. Influence institutional investor decisions.',
+                type: 'analyst'
+            },
+            esg: {
+                id: 'esg-1',
+                label: 'ESG Investors',
+                color: '#FFD3B6',
+                size: 24,
+                description: 'Investors focusing on Environmental, Social, and Governance factors. Growing influence on corporate behavior and disclosure.',
+                type: 'esg'
+            },
+            index: {
+                id: 'index-1',
+                label: 'Index Funds',
+                color: '#FFAAA5',
+                size: 26,
+                description: 'Passive funds tracking market indices. Largest and fastest-growing investor category with long-term hold strategy.',
+                type: 'index'
+            }
+        };
+
+        // Define relationships (edges)
+        const relationships = [
+            { from: 'company', to: 'inst-1', label: 'Capital & Governance', value: 5 },
+            { from: 'company', to: 'retail-1', label: 'Public Trading', value: 3 },
+            { from: 'company', to: 'activist-1', label: 'Influence & Pressure', value: 4 },
+            { from: 'company', to: 'hedge-1', label: 'Active Trading', value: 4 },
+            { from: 'company', to: 'sovereign-1', label: 'Long-term Capital', value: 3 },
+            { from: 'company', to: 'insider-1', label: 'Ownership & Control', value: 5 },
+            { from: 'company', to: 'analyst-1', label: 'Research & Coverage', value: 4 },
+            { from: 'company', to: 'esg-1', label: 'Sustainability Focus', value: 3 },
+            { from: 'company', to: 'index-1', label: 'Passive Ownership', value: 4 },
+            { from: 'analyst-1', to: 'inst-1', label: 'Research Reports', value: 3 },
+            { from: 'analyst-1', to: 'hedge-1', label: 'Investment Ideas', value: 3 },
+            { from: 'activist-1', to: 'inst-1', label: 'Proxy Campaigns', value: 2 },
+            { from: 'esg-1', to: 'inst-1', label: 'ESG Standards', value: 2 },
+            { from: 'retail-1', to: 'analyst-1', label: 'Research Consumption', value: 2 }
+        ];
+
+        // Create nodes array
+        let nodes = new vis.DataSet(Object.values(investorTypes).map(type => ({
+            id: type.id,
+            label: type.label,
+            color: type.color,
+            size: type.size,
+            font: { size: 14, color: '#000' },
+            borderWidth: 2,
+            borderColor: '#333',
+            description: type.description,
+            investorType: type.type
+        })));
+
+        // Create edges array
+        let edges = new vis.DataSet(relationships.map(rel => ({
+            from: rel.from,
+            to: rel.to,
+            label: rel.label,
+            value: rel.value,
+            arrows: { to: { enabled: false } },
+            color: { color: '#848484', highlight: '#2B7CE9' },
+            font: { size: 10, color: '#666', strokeWidth: 0 },
+            smooth: { type: 'continuous' }
+        })));
+
+        // Network configuration
+        const container = document.getElementById('network-container');
+        const data = { nodes: nodes, edges: edges };
+        const options = {
+            nodes: {
+                shape: 'dot',
+                shadow: true
+            },
+            edges: {
+                width: 2,
+                smooth: {
+                    type: 'continuous'
+                }
+            },
+            physics: {
+                stabilization: true,
+                barnesHut: {
+                    gravitationalConstant: -30000,
+                    springConstant: 0.001,
+                    springLength: 200
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                navigationButtons: true,
+                keyboard: true
+            }
+        };
+
+        // Initialize network
+        const network = new vis.Network(container, data, options);
+
+        // Create filter checkboxes
+        const filterContainer = document.getElementById('filter-checkboxes');
+        const uniqueTypes = [...new Set(Object.values(investorTypes).map(t => t.type))];
+
+        uniqueTypes.forEach(type => {
+            if (type !== 'company') {
+                const div = document.createElement('div');
+                div.className = 'filter-item';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `filter-${type}`;
+                checkbox.checked = true;
+                checkbox.onchange = applyFilters;
+
+                const label = document.createElement('label');
+                label.htmlFor = `filter-${type}`;
+                label.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+
+                div.appendChild(checkbox);
+                div.appendChild(label);
+                filterContainer.appendChild(div);
+            }
+        });
+
+        // Create legend
+        const legendContainer = document.getElementById('legend-items');
+        Object.values(investorTypes).forEach(type => {
+            const div = document.createElement('div');
+            div.className = 'legend-item';
+
+            const colorBox = document.createElement('div');
+            colorBox.className = 'legend-color';
+            colorBox.style.backgroundColor = type.color;
+
+            const label = document.createElement('span');
+            label.textContent = type.label;
+
+            div.appendChild(colorBox);
+            div.appendChild(label);
+            legendContainer.appendChild(div);
+        });
+
+        // Handle node selection
+        network.on('click', function(params) {
+            if (params.nodes.length > 0) {
+                const nodeId = params.nodes[0];
+                const node = nodes.get(nodeId);
+                const infoPanel = document.getElementById('info-panel');
+                const infoTitle = document.getElementById('info-title');
+                const infoContent = document.getElementById('info-content');
+
+                infoTitle.textContent = node.label;
+                infoContent.textContent = node.description;
+                infoPanel.classList.add('active');
+            }
+        });
+
+        // Apply filters
+        function applyFilters() {
+            const allNodes = Object.values(investorTypes);
+            const activeTypes = uniqueTypes.filter(type => {
+                const checkbox = document.getElementById(`filter-${type}`);
+                return type === 'company' || (checkbox && checkbox.checked);
+            });
+
+            // Update nodes visibility
+            allNodes.forEach(type => {
+                if (activeTypes.includes(type.type)) {
+                    nodes.update({ id: type.id, hidden: false });
+                } else {
+                    nodes.update({ id: type.id, hidden: true });
+                }
+            });
+
+            // Update edges visibility
+            relationships.forEach((rel, index) => {
+                const fromNode = nodes.get(rel.from);
+                const toNode = nodes.get(rel.to);
+
+                if (fromNode && toNode && !fromNode.hidden && !toNode.hidden) {
+                    edges.update({ id: index, hidden: false });
+                } else {
+                    edges.update({ id: index, hidden: true });
+                }
+            });
+        }
+
+        // Reset network view
+        function resetNetwork() {
+            network.fit();
+
+            // Reset all filters
+            uniqueTypes.forEach(type => {
+                if (type !== 'company') {
+                    const checkbox = document.getElementById(`filter-${type}`);
+                    if (checkbox) checkbox.checked = true;
+                }
+            });
+
+            applyFilters();
+
+            document.getElementById('info-panel').classList.remove('active');
+        }
+
+        // Re-layout network
+        function layoutNetwork() {
+            network.stabilize();
+        }
+
+        // Initial fit
+        network.once('stabilized', function() {
+            network.fit();
+        });
+    </script>
+</body>
+</html>

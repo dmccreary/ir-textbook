@@ -1,0 +1,252 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "dublin_core": {
+    "title": "P/E Ratio Calculator",
+    "creator": "AI for Investor Relations Transformation Course",
+    "subject": ["Investor Relations", "Valuation Metrics", "Financial Analysis", "P/E Ratio", "Stock Valuation"],
+    "description": "An interactive MicroSim demonstrating how the Price-to-Earnings (P/E) ratio is calculated and used to evaluate company valuation. Students can adjust stock price and earnings per share to see real-time P/E calculations and compare against industry averages to assess overvaluation or undervaluation.",
+    "publisher": "Intelligent Textbook Series",
+    "date": "2025-01-19",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0"
+  },
+  "educational": {
+    "grade_level": "Executive/Professional Development (Undergraduate/Graduate equivalent)",
+    "subject_area": "Business - Investor Relations & Corporate Finance",
+    "topic": "Valuation Metrics and Financial Performance Analysis",
+    "learning_objectives": [
+      "Understand how P/E ratio is calculated from stock price and earnings per share",
+      "Apply P/E ratio analysis to evaluate whether a stock is overvalued or undervalued",
+      "Analyze how changes in price or earnings affect the P/E multiple",
+      "Evaluate the appropriateness of different P/E levels across industries"
+    ],
+    "blooms_taxonomy": ["Understand", "Apply", "Analyze", "Evaluate"],
+    "duration_minutes": 40,
+    "prerequisites": [
+      "Understanding of stock prices and what they represent",
+      "Familiarity with earnings and profitability concepts",
+      "Basic algebra (ratio calculation)",
+      "Awareness of companies operating in different industries"
+    ],
+    "assessment_opportunities": [
+      "Can students correctly calculate P/E given price and earnings?",
+      "Can they explain why P/E changes when price or earnings change?",
+      "Can they interpret whether a given P/E suggests overvaluation or undervaluation?",
+      "Can they compare valuations across different industries appropriately?"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvas_width": 800,
+    "canvas_height": 632,
+    "draw_height": 480,
+    "control_height": 150,
+    "responsive": "width-responsive",
+    "dependencies": ["p5.js CDN"],
+    "accessibility_features": [
+      "ARIA labels for screen readers",
+      "High contrast color scheme",
+      "Large text sizes (16px minimum)",
+      "Keyboard-navigable sliders"
+    ],
+    "browser_compatibility": ["Chrome", "Firefox", "Safari", "Edge"],
+    "mobile_friendly": true
+  },
+  "user_interface": {
+    "controls": [
+      {
+        "type": "slider",
+        "name": "Stock Price",
+        "min": 10,
+        "max": 500,
+        "default": 100,
+        "step": 1,
+        "description": "Adjust the stock price per share",
+        "purpose": "Demonstrates how stock price affects P/E ratio"
+      },
+      {
+        "type": "slider",
+        "name": "Earnings Per Share (EPS)",
+        "min": -10,
+        "max": 50,
+        "default": 5,
+        "step": 0.5,
+        "description": "Adjust earnings per share (can be negative)",
+        "purpose": "Shows how earnings affect P/E and handles negative earnings"
+      },
+      {
+        "type": "slider",
+        "name": "Industry Average P/E",
+        "min": 5,
+        "max": 60,
+        "default": 20,
+        "step": 1,
+        "description": "Set the industry benchmark P/E ratio",
+        "purpose": "Enables relative valuation comparison"
+      },
+      {
+        "type": "button",
+        "name": "Tech Co",
+        "description": "Load high-growth tech company example",
+        "purpose": "Demonstrates typical high P/E in growth sectors"
+      },
+      {
+        "type": "button",
+        "name": "Retail Co",
+        "description": "Load established retail company example",
+        "purpose": "Shows moderate P/E for mature businesses"
+      },
+      {
+        "type": "button",
+        "name": "Utility Co",
+        "description": "Load stable utility company example",
+        "purpose": "Illustrates low P/E in regulated, stable sectors"
+      },
+      {
+        "type": "button",
+        "name": "Startup",
+        "description": "Load unprofitable startup example",
+        "purpose": "Demonstrates why P/E is N/A for negative earnings"
+      }
+    ],
+    "visualizations": [
+      {
+        "type": "formula_display",
+        "description": "Shows the P/E ratio formula and live calculation",
+        "purpose": "Reinforces the mathematical relationship"
+      },
+      {
+        "type": "large_pe_display",
+        "description": "Prominent display of calculated P/E ratio with color coding",
+        "purpose": "Provides immediate visual feedback on valuation level"
+      },
+      {
+        "type": "comparison_chart",
+        "description": "Horizontal bar chart comparing company P/E to industry average",
+        "purpose": "Visual representation of relative valuation"
+      },
+      {
+        "type": "valuation_interpretation",
+        "description": "Text label indicating overvalued, fairly valued, or undervalued status",
+        "purpose": "Helps students interpret the numerical P/E value"
+      }
+    ]
+  },
+  "simulation_model": {
+    "model_type": "Financial ratio calculator",
+    "methodology": "Real-time calculation of P/E ratio with comparative valuation analysis",
+    "variables": [
+      {
+        "name": "stockPrice",
+        "description": "Current stock price per share",
+        "type": "float",
+        "range": [10, 500],
+        "units": "USD"
+      },
+      {
+        "name": "earningsPerShare",
+        "description": "Trailing 12-month earnings per share",
+        "type": "float",
+        "range": [-10, 50],
+        "units": "USD"
+      },
+      {
+        "name": "peRatio",
+        "description": "Calculated Price-to-Earnings ratio",
+        "type": "float",
+        "range": [0, 100],
+        "units": "ratio"
+      },
+      {
+        "name": "industryAvgPE",
+        "description": "Industry benchmark P/E ratio",
+        "type": "float",
+        "range": [5, 60],
+        "units": "ratio"
+      }
+    ],
+    "equations": [
+      "peRatio = stockPrice / earningsPerShare (when EPS > 0)",
+      "peRatio = N/A (when EPS <= 0)",
+      "percentDifference = ((peRatio - industryAvgPE) / industryAvgPE) * 100"
+    ],
+    "sample_companies": {
+      "tech": {
+        "price": 150,
+        "eps": 4,
+        "industry_pe": 35,
+        "sector": "High-growth technology"
+      },
+      "retail": {
+        "price": 45,
+        "eps": 3,
+        "industry_pe": 15,
+        "sector": "Established retail"
+      },
+      "utility": {
+        "price": 60,
+        "eps": 5,
+        "industry_pe": 12,
+        "sector": "Regulated utility"
+      },
+      "startup": {
+        "price": 80,
+        "eps": -2,
+        "industry_pe": 25,
+        "sector": "Unprofitable growth-stage"
+      }
+    },
+    "assumptions": [
+      "EPS represents trailing 12-month earnings",
+      "Industry averages are static benchmarks",
+      "Valuation assessment is relative, not absolute",
+      "P/E ratios don't account for growth rates (PEG ratio would)"
+    ],
+    "limitations": [
+      "Does not consider growth rates (use PEG ratio for that)",
+      "Does not account for debt levels or financial leverage",
+      "Ignores cash flow and other financial metrics",
+      "Simplified industry categories don't capture sub-sector differences",
+      "No adjustment for one-time earnings events",
+      "Does not factor in dividend yields or payout ratios"
+    ]
+  },
+  "pedagogical_context": {
+    "course_chapter": "Chapter 4: Valuation Metrics and Performance",
+    "related_concepts": [
+      "Price-to-Earnings Ratio",
+      "Valuation Multiples",
+      "Relative Valuation",
+      "Earnings Per Share",
+      "Industry Benchmarking",
+      "Growth vs Value Investing"
+    ],
+    "instructional_strategy": "Exploratory learning with scaffolded scenarios moving from simple to complex",
+    "cognitive_load": "Medium - single metric focus but requires understanding of numerator/denominator relationship",
+    "learning_progression": [
+      "Understand the P/E formula through direct manipulation",
+      "Observe how price and earnings independently affect P/E",
+      "Compare sample companies across sectors",
+      "Apply to real-world company analysis",
+      "Evaluate appropriateness of valuations in context"
+    ],
+    "common_misconceptions": [
+      "Higher P/E is always better (actually signals higher expectations and risk)",
+      "P/E works for all companies (meaningless for negative earnings)",
+      "P/E can be compared across all industries (sector context critical)",
+      "Low P/E always means good value (may signal fundamental problems)"
+    ]
+  },
+  "integration": {
+    "mkdocs_path": "/docs/sims/pe-ratio-calculator/",
+    "chapter_reference": "../../chapters/04-valuation-metrics-performance/index.md",
+    "related_microsims": [],
+    "embedding_height": "632px",
+    "fullscreen_link": "./main.html"
+  },
+  "version": "1.0.0",
+  "last_updated": "2025-01-19"
+}

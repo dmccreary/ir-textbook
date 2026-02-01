@@ -1,0 +1,86 @@
+{
+  "AGENTIC": {
+    "classifierName": "Agentic AI Systems",
+    "color": "#6366f1",
+    "font": {
+      "color": "white"
+    }
+  },
+  "AI-CONT": {
+    "classifierName": "AI Content Creation",
+    "color": "#8b5cf6",
+    "font": {
+      "color": "white"
+    }
+  },
+  "AI-GOV": {
+    "classifierName": "AI Governance",
+    "color": "#a855f7",
+    "font": {
+      "color": "white"
+    }
+  },
+  "AI-TECH": {
+    "classifierName": "AI Technology",
+    "color": "#ec4899",
+    "font": {
+      "color": "white"
+    }
+  },
+  "ANLYT": {
+    "classifierName": "Analytics & Predictions",
+    "color": "#06b6d4",
+    "font": {
+      "color": "white"
+    }
+  },
+  "DATA-GOV": {
+    "classifierName": "Data Governance",
+    "color": "#10b981",
+    "font": {
+      "color": "white"
+    }
+  },
+  "INVEST": {
+    "classifierName": "Investor Types",
+    "color": "#f59e0b",
+    "font": {
+      "color": "black"
+    }
+  },
+  "IR-FOUND": {
+    "classifierName": "IR Foundations",
+    "color": "#ef4444",
+    "font": {
+      "color": "white"
+    }
+  },
+  "IR-OPS": {
+    "classifierName": "IR Operations",
+    "color": "#f97316",
+    "font": {
+      "color": "white"
+    }
+  },
+  "REG-COMP": {
+    "classifierName": "Regulatory Compliance",
+    "color": "#84cc16",
+    "font": {
+      "color": "black"
+    }
+  },
+  "TRANSFORM": {
+    "classifierName": "Transformation & Strategy",
+    "color": "#3b82f6",
+    "font": {
+      "color": "white"
+    }
+  },
+  "VALMET": {
+    "classifierName": "Valuation Metrics",
+    "color": "#eab308",
+    "font": {
+      "color": "black"
+    }
+  }
+}

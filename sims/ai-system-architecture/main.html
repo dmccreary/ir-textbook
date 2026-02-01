@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI System Architecture MicroSim</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        #network-container {
+            width: 100%;
+            height: 700px;
+            border: 2px solid #ddd;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .controls {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .controls h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .view-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button.secondary {
+            background-color: #2196F3;
+        }
+
+        button.secondary:hover {
+            background-color: #0b7dda;
+        }
+
+        .legend {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+
+        .legend-shape {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .info-panel {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .info-panel.active {
+            display: block;
+        }
+
+        .info-panel h4 {
+            margin-top: 0;
+            color: #1976d2;
+            font-size: 20px;
+        }
+
+        .info-panel p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .info-panel .technical-details {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>AI System Architecture: Agentic Systems with MCP</h1>
+        <p class="description">Interactive visualization of modern agentic AI architectures using the Model Context Protocol (MCP) for IR applications</p>
+
+        <div id="network-container"></div>
+
+        <div class="controls">
+            <h3>Explore Architecture Views</h3>
+            <div class="view-buttons">
+                <button onclick="showFullArchitecture()">Full Architecture</button>
+                <button onclick="showMCPFocus()">MCP Focus</button>
+                <button onclick="showDataFlow()">Data Flow</button>
+                <button onclick="showSecurityLayers()">Security Layers</button>
+                <button class="secondary" onclick="resetView()">Reset View</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Component Types</h3>
+            <div class="legend-grid" id="legend-grid"></div>
+        </div>
+
+        <div class="info-panel" id="info-panel">
+            <h4 id="info-title">Select a component to see details</h4>
+            <p id="info-description"></p>
+            <div class="technical-details" id="technical-details"></div>
+        </div>
+
+        <a href="." class="back-link">Back to Lesson Plan</a>
+    </main>
+
+    <script type="text/javascript">
+        // Define component types with characteristics
+        const components = {
+            // Core AI Layer
+            llm: {
+                id: 'llm',
+                label: 'LLM\n(Claude/GPT)',
+                group: 'core',
+                color: '#FF6B6B',
+                shape: 'box',
+                size: 40,
+                description: 'Large Language Model - The core AI engine that processes natural language, generates responses, and makes decisions.',
+                technical: 'Examples: Claude (Anthropic), GPT-4 (OpenAI), Gemini (Google). Handles reasoning, instruction following, and context understanding.'
+            },
+
+            agent: {
+                id: 'agent',
+                label: 'Agentic Layer',
+                group: 'core',
+                color: '#FF8E53',
+                shape: 'box',
+                size: 35,
+                description: 'Orchestration layer that enables autonomous behavior, tool use, and multi-step reasoning.',
+                technical: 'Frameworks: LangChain, AutoGPT, CrewAI. Manages task planning, tool selection, and iterative problem-solving.'
+            },
+
+            // MCP Layer
+            mcp_server: {
+                id: 'mcp-server',
+                label: 'MCP Server',
+                group: 'mcp',
+                color: '#4ECDC4',
+                shape: 'diamond',
+                size: 35,
+                description: 'Model Context Protocol server providing standardized interface for AI to access data sources and tools.',
+                technical: 'Open protocol by Anthropic. Manages resources, prompts, and tools with security boundaries.'
+            },
+
+            mcp_client: {
+                id: 'mcp-client',
+                label: 'MCP Client',
+                group: 'mcp',
+                color: '#45B7D1',
+                shape: 'diamond',
+                size: 30,
+                description: 'Client-side MCP implementation in the AI application connecting to MCP servers.',
+                technical: 'Handles protocol negotiation, authentication, and request/response routing.'
+            },
+
+            // Data Sources
+            edgar: {
+                id: 'edgar',
+                label: 'SEC EDGAR',
+                group: 'data',
+                color: '#95E1D3',
+                shape: 'database',
+                size: 25,
+                description: 'SEC EDGAR database containing public company filings (10-K, 10-Q, 8-K, proxy statements).',
+                technical: 'Accessed via MCP for automated retrieval of financial disclosures and regulatory filings.'
+            },
+
+            crm: {
+                id: 'crm',
+                label: 'IR CRM',
+                group: 'data',
+                color: '#A8E6CF',
+                shape: 'database',
+                size: 25,
+                description: 'Investor relations CRM system tracking shareholder contacts, meetings, and interactions.',
+                technical: 'Examples: Q4, Nasdaq IR Insight. Stores investor targeting data and engagement history.'
+            },
+
+            market_data: {
+                id: 'market-data',
+                label: 'Market Data',
+                group: 'data',
+                color: '#B8E0D2',
+                shape: 'database',
+                size: 25,
+                description: 'Real-time and historical market data including stock prices, trading volumes, and analyst estimates.',
+                technical: 'Sources: Bloomberg, FactSet, Refinitiv. Accessed via APIs or MCP servers.'
+            },
+
+            internal_db: {
+                id: 'internal-db',
+                label: 'Internal\nDatabases',
+                group: 'data',
+                color: '#C7EEFF',
+                shape: 'database',
+                size: 25,
+                description: 'Company internal databases with financial results, operational metrics, and strategic data.',
+                technical: 'ERP systems, data warehouses, analytics platforms with controlled access.'
+            },
+
+            // Tools
+            sentiment_tool: {
+                id: 'sentiment',
+                label: 'Sentiment\nAnalysis',
+                group: 'tools',
+                color: '#FFD3B6',
+                shape: 'ellipse',
+                size: 20,
+                description: 'Tool for analyzing sentiment in earnings transcripts, news articles, and social media.',
+                technical: 'Models: FinBERT, custom LLM-based analysis. Returns positive/negative/neutral scores.'
+            },
+
+            report_gen: {
+                id: 'report-gen',
+                label: 'Report\nGeneration',
+                group: 'tools',
+                color: '#FFAAA5',
+                shape: 'ellipse',
+                size: 20,
+                description: 'Automated generation of investor presentations, earnings summaries, and analytical reports.',
+                technical: 'Template-based generation with LLM content creation and data visualization.'
+            },
+
+            qa_prep: {
+                id: 'qa-prep',
+                label: 'Q&A Prep',
+                group: 'tools',
+                color: '#FF8B94',
+                shape: 'ellipse',
+                size: 20,
+                description: 'Tool to prepare for analyst questions by analyzing past transcripts and predicting likely questions.',
+                technical: 'Uses historical Q&A analysis, competitor benchmarking, and current event analysis.'
+            },
+
+            compliance: {
+                id: 'compliance',
+                label: 'Compliance\nChecker',
+                group: 'tools',
+                color: '#FFC5BF',
+                shape: 'ellipse',
+                size: 20,
+                description: 'Automated compliance review for Reg FD, material disclosure requirements, and corporate policies.',
+                technical: 'Rule-based validation plus LLM review for potential selective disclosure or material information.'
+            },
+
+            // Security & Governance
+            auth: {
+                id: 'auth',
+                label: 'Authentication',
+                group: 'security',
+                color: '#AA96DA',
+                shape: 'box',
+                size: 22,
+                description: 'Authentication and authorization layer controlling access to AI capabilities and data.',
+                technical: 'OAuth, SSO, role-based access control (RBAC), and API key management.'
+            },
+
+            audit: {
+                id: 'audit',
+                label: 'Audit Trail',
+                group: 'security',
+                color: '#FCBAD3',
+                shape: 'box',
+                size: 22,
+                description: 'Comprehensive logging of all AI interactions, data access, and generated outputs for compliance.',
+                technical: 'Immutable logs capturing: prompts, responses, data accessed, user identity, timestamps.'
+            },
+
+            // User Interface
+            ui: {
+                id: 'ui',
+                label: 'IR Dashboard',
+                group: 'interface',
+                color: '#FFFFD2',
+                shape: 'box',
+                size: 30,
+                description: 'User interface where IR team members interact with AI capabilities.',
+                technical: 'Web application with chat interface, dashboards, and workflow management.'
+            }
+        };
+
+        // Define connections
+        const connections = [
+            // Core AI flow
+            { from: 'ui', to: 'agent', label: 'User Request', value: 5, arrows: 'to' },
+            { from: 'agent', to: 'llm', label: 'Prompt', value: 5, arrows: 'to' },
+            { from: 'llm', to: 'agent', label: 'Response', value: 5, arrows: 'to', dashes: true },
+            { from: 'agent', to: 'ui', label: 'Result', value: 5, arrows: 'to', dashes: true },
+
+            // MCP connections
+            { from: 'agent', to: 'mcp-client', label: 'MCP Request', value: 4, arrows: 'to' },
+            { from: 'mcp-client', to: 'mcp-server', label: 'Protocol', value: 4, arrows: 'to, from' },
+
+            // Data source connections via MCP
+            { from: 'mcp-server', to: 'edgar', label: 'Fetch Filings', value: 3, arrows: 'to' },
+            { from: 'mcp-server', to: 'crm', label: 'Investor Data', value: 3, arrows: 'to' },
+            { from: 'mcp-server', to: 'market-data', label: 'Market Info', value: 3, arrows: 'to' },
+            { from: 'mcp-server', to: 'internal-db', label: 'Internal Data', value: 3, arrows: 'to' },
+
+            // Tool connections
+            { from: 'agent', to: 'sentiment', label: 'Analyze', value: 2, arrows: 'to' },
+            { from: 'agent', to: 'report-gen', label: 'Generate', value: 2, arrows: 'to' },
+            { from: 'agent', to: 'qa-prep', label: 'Prepare', value: 2, arrows: 'to' },
+            { from: 'agent', to: 'compliance', label: 'Check', value: 2, arrows: 'to' },
+
+            // Security layer
+            { from: 'ui', to: 'auth', label: 'Login', value: 3, arrows: 'to' },
+            { from: 'auth', to: 'agent', label: 'Authorized', value: 3, arrows: 'to', dashes: true },
+            { from: 'agent', to: 'audit', label: 'Log Activity', value: 3, arrows: 'to' },
+            { from: 'mcp-server', to: 'audit', label: 'Log Access', value: 3, arrows: 'to' }
+        ];
+
+        // Create nodes
+        let nodes = new vis.DataSet(Object.values(components).map(comp => ({
+            id: comp.id,
+            label: comp.label,
+            group: comp.group,
+            color: comp.color,
+            shape: comp.shape,
+            size: comp.size,
+            font: { size: 13, color: '#000', bold: true },
+            borderWidth: 3,
+            borderColor: '#333',
+            description: comp.description,
+            technical: comp.technical
+        })));
+
+        // Create edges
+        let edges = new vis.DataSet(connections.map((conn, index) => ({
+            id: index,
+            from: conn.from,
+            to: conn.to,
+            label: conn.label,
+            value: conn.value,
+            arrows: conn.arrows || 'to',
+            dashes: conn.dashes || false,
+            color: { color: conn.dashes ? '#999' : '#555', highlight: '#2B7CE9' },
+            font: { size: 11, color: '#333', strokeWidth: 3, strokeColor: '#fff' },
+            smooth: { type: 'continuous' }
+        })));
+
+        // Network configuration
+        const container = document.getElementById('network-container');
+        const data = { nodes: nodes, edges: edges };
+        const options = {
+            layout: {
+                hierarchical: {
+                    enabled: false
+                }
+            },
+            nodes: {
+                shadow: {
+                    enabled: true,
+                    size: 10,
+                    x: 3,
+                    y: 3
+                }
+            },
+            edges: {
+                width: 2,
+                smooth: {
+                    type: 'continuous'
+                }
+            },
+            physics: {
+                enabled: true,
+                barnesHut: {
+                    gravitationalConstant: -15000,
+                    springConstant: 0.002,
+                    springLength: 150,
+                    avoidOverlap: 0.5
+                },
+                stabilization: {
+                    iterations: 200
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                navigationButtons: true,
+                keyboard: true
+            }
+        };
+
+        // Initialize network
+        const network = new vis.Network(container, data, options);
+
+        // Create legend
+        const legendGrid = document.getElementById('legend-grid');
+        const groups = {
+            core: { name: 'Core AI', color: '#FF6B6B' },
+            mcp: { name: 'MCP Protocol', color: '#4ECDC4' },
+            data: { name: 'Data Sources', color: '#95E1D3' },
+            tools: { name: 'AI Tools', color: '#FFD3B6' },
+            security: { name: 'Security & Governance', color: '#AA96DA' },
+            interface: { name: 'User Interface', color: '#FFFFD2' }
+        };
+
+        Object.entries(groups).forEach(([key, group]) => {
+            const div = document.createElement('div');
+            div.className = 'legend-item';
+
+            const shape = document.createElement('div');
+            shape.className = 'legend-shape';
+            shape.style.backgroundColor = group.color;
+
+            const label = document.createElement('span');
+            label.textContent = group.name;
+
+            div.appendChild(shape);
+            div.appendChild(label);
+            legendGrid.appendChild(div);
+        });
+
+        // Handle node selection
+        network.on('click', function(params) {
+            if (params.nodes.length > 0) {
+                const nodeId = params.nodes[0];
+                const node = nodes.get(nodeId);
+                const comp = components[nodeId];
+
+                document.getElementById('info-title').textContent = node.label.replace('\n', ' ');
+                document.getElementById('info-description').textContent = comp.description;
+                document.getElementById('technical-details').innerHTML =
+                    '<strong>Technical Details:</strong><br>' + comp.technical;
+                document.getElementById('info-panel').classList.add('active');
+            }
+        });
+
+        // View functions
+        function showFullArchitecture() {
+            Object.values(components).forEach(comp => {
+                nodes.update({ id: comp.id, hidden: false });
+            });
+            connections.forEach((conn, index) => {
+                edges.update({ id: index, hidden: false });
+            });
+            network.fit();
+        }
+
+        function showMCPFocus() {
+            const mcpNodes = ['mcp-server', 'mcp-client', 'agent', 'edgar', 'crm', 'market-data', 'internal-db'];
+            Object.values(components).forEach(comp => {
+                nodes.update({ id: comp.id, hidden: !mcpNodes.includes(comp.id) });
+            });
+            connections.forEach((conn, index) => {
+                const show = mcpNodes.includes(conn.from) && mcpNodes.includes(conn.to);
+                edges.update({ id: index, hidden: !show });
+            });
+            network.fit();
+        }
+
+        function showDataFlow() {
+            const dataNodes = ['ui', 'agent', 'llm', 'mcp-client', 'mcp-server', 'edgar', 'internal-db'];
+            Object.values(components).forEach(comp => {
+                nodes.update({ id: comp.id, hidden: !dataNodes.includes(comp.id) });
+            });
+            connections.forEach((conn, index) => {
+                const show = dataNodes.includes(conn.from) && dataNodes.includes(conn.to);
+                edges.update({ id: index, hidden: !show });
+            });
+            network.fit();
+        }
+
+        function showSecurityLayers() {
+            const secNodes = ['ui', 'auth', 'agent', 'mcp-server', 'audit', 'compliance'];
+            Object.values(components).forEach(comp => {
+                nodes.update({ id: comp.id, hidden: !secNodes.includes(comp.id) });
+            });
+            connections.forEach((conn, index) => {
+                const show = secNodes.includes(conn.from) && secNodes.includes(conn.to);
+                edges.update({ id: index, hidden: !show });
+            });
+            network.fit();
+        }
+
+        function resetView() {
+            showFullArchitecture();
+            document.getElementById('info-panel').classList.remove('active');
+        }
+
+        // Initial fit
+        network.once('stabilized', function() {
+            network.fit();
+        });
+    </script>
+</body>
+</html>

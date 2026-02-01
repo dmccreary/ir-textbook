@@ -1,0 +1,323 @@
+/* Anthropic Brand Guidelines - Custom Styles */
+
+/* Import Anthropic Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lora:wght@400;500&display=swap');
+
+/* Root Variables - Anthropic Brand Colors */
+:root {
+  /* Main Colors */
+  --anthropic-dark: #141413;
+  --anthropic-light: #faf9f5;
+  --anthropic-mid-gray: #b0aea5;
+  --anthropic-light-gray: #e8e6dc;
+
+  /* Accent Colors */
+  --anthropic-orange: #d97757;
+  --anthropic-blue: #6a9bcc;
+  --anthropic-green: #788c5d;
+
+  /* Typography */
+  --heading-font: 'Poppins', Arial, sans-serif;
+  --body-font: 'Lora', Georgia, serif;
+}
+
+/* Typography - Headings use Poppins */
+h1, h2, h3, h4, h5, h6,
+.md-header__topic,
+.md-nav__title,
+.md-sidebar__scrollwrap .md-nav--primary > .md-nav__title {
+  font-family: var(--heading-font) !important;
+  font-weight: 600;
+}
+
+/* Typography - Body uses Lora */
+body,
+.md-typeset,
+p,
+li,
+.md-nav__link {
+  font-family: var(--body-font) !important;
+  font-weight: 400;
+}
+
+/* Color Scheme - Light Mode (Default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--anthropic-dark);
+  --md-primary-fg-color--light: var(--anthropic-mid-gray);
+  --md-primary-fg-color--dark: var(--anthropic-dark);
+  --md-primary-bg-color: var(--anthropic-light);
+  --md-primary-bg-color--light: var(--anthropic-light-gray);
+
+  --md-accent-fg-color: var(--anthropic-orange);
+  --md-accent-fg-color--transparent: rgba(217, 119, 87, 0.1);
+  --md-accent-bg-color: var(--anthropic-light);
+
+  --md-default-bg-color: var(--anthropic-light);
+  --md-default-fg-color: var(--anthropic-dark);
+  --md-default-fg-color--light: var(--anthropic-mid-gray);
+  --md-default-fg-color--lighter: var(--anthropic-light-gray);
+
+  --md-code-bg-color: var(--anthropic-light-gray);
+  --md-code-fg-color: var(--anthropic-dark);
+}
+
+/* Color Scheme - Dark Mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--anthropic-light);
+  --md-primary-fg-color--light: var(--anthropic-light-gray);
+  --md-primary-fg-color--dark: var(--anthropic-light);
+  --md-primary-bg-color: var(--anthropic-dark);
+  --md-primary-bg-color--light: #1f1f1e;
+
+  --md-accent-fg-color: var(--anthropic-orange);
+  --md-accent-fg-color--transparent: rgba(217, 119, 87, 0.1);
+  --md-accent-bg-color: var(--anthropic-dark);
+
+  --md-default-bg-color: var(--anthropic-dark);
+  --md-default-fg-color: var(--anthropic-light);
+  --md-default-fg-color--light: var(--anthropic-light-gray);
+  --md-default-fg-color--lighter: var(--anthropic-mid-gray);
+
+  --md-code-bg-color: #1f1f1e;
+  --md-code-fg-color: var(--anthropic-light);
+}
+
+/* Accent Color Highlights */
+.md-typeset a {
+  color: var(--anthropic-orange);
+}
+
+.md-typeset a:hover {
+  color: var(--anthropic-blue);
+}
+
+/* Buttons - Orange Accent */
+.md-button {
+  background-color: var(--anthropic-orange);
+  border-color: var(--anthropic-orange);
+  color: var(--anthropic-light);
+}
+
+.md-button:hover {
+  background-color: var(--anthropic-blue);
+  border-color: var(--anthropic-blue);
+}
+
+/* Tables - Brand Styling */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--anthropic-light-gray);
+  background-color: var(--anthropic-light);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--anthropic-dark);
+  color: var(--anthropic-light);
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--anthropic-light-gray);
+}
+
+/* Code Blocks - Subtle Gray Background */
+.md-typeset pre > code {
+  background-color: var(--anthropic-light-gray);
+  border-radius: 8px;
+}
+
+/* Admonitions - Branded Colors */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info {
+  border-left-color: var(--anthropic-blue);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset .admonition.attention {
+  border-left-color: var(--anthropic-orange);
+}
+
+.md-typeset .admonition.success,
+.md-typeset .admonition.tip {
+  border-left-color: var(--anthropic-green);
+}
+
+/* Cards - Dark Card Style */
+.md-typeset .card {
+  background: var(--anthropic-dark);
+  color: var(--anthropic-light);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+/* Navigation - Brand Colors */
+.md-nav__link--active {
+  color: var(--anthropic-orange) !important;
+}
+
+.md-nav__link:hover {
+  color: var(--anthropic-blue) !important;
+}
+
+/* Header - Clean Anthropic Style */
+.md-header {
+  background-color: var(--anthropic-dark);
+  color: var(--anthropic-light);
+}
+
+/* Footer - Consistent Branding */
+.md-footer {
+  background-color: var(--anthropic-dark);
+  color: var(--anthropic-light);
+}
+
+.md-footer-meta {
+  background-color: #0f0f0e;
+}
+
+/* Responsive Design - Maintain Brand Consistency */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--anthropic-dark);
+    color: var(--anthropic-light);
+  }
+}
+
+/* Custom Highlight for Learning Concepts */
+.concept-highlight {
+  background-color: var(--anthropic-light-gray);
+  border-left: 4px solid var(--anthropic-orange);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Custom Styles for Interactive Elements */
+.interactive-element {
+  border: 2px solid var(--anthropic-blue);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: var(--anthropic-light);
+  margin: 1.5rem 0;
+}
+
+/* MicroSim Container */
+.microsim-container {
+  background-color: var(--anthropic-dark);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+/* --- Concepts Covered Card --- */
+details.concepts-covered {
+  border: 1px solid #e8e6dc;
+  border-radius: 8px;
+  background-color: #faf9f5;
+  margin: 1.5rem 0;
+  font-family: 'Lora', serif;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+/* Remove MkDocs Material's default triangle */
+details.concepts-covered summary::-webkit-details-marker,
+details.concepts-covered summary::marker {
+  display: none;
+}
+
+/* Summary (header) */
+details.concepts-covered summary {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #141413;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #faf9f5;
+  transition: background-color 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+details.concepts-covered summary:hover {
+  background-color: rgba(217, 119, 87, 0.05);
+  border-left-color: #d97757;
+}
+
+/* Chevron icon */
+details.concepts-covered summary .chevron {
+  font-size: 1.1rem;
+  color: #b0aea5;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+
+details.concepts-covered[open] summary .chevron {
+  transform: rotate(90deg);
+  color: #d97757;
+}
+
+/* Hide any book emoji or other icons that might appear */
+details.concepts-covered summary::before {
+  display: none !important;
+}
+
+/* Hide MkDocs Material's default right-side arrow/chevron */
+details.concepts-covered summary::after {
+  display: none !important;
+}
+
+/* Inner list */
+details.concepts-covered .concepts-list {
+  padding: 0.75rem 1.25rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #141413;
+}
+
+/* Animation for open */
+details.concepts-covered[open] .concepts-list {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark mode support */
+[data-md-color-scheme="slate"] details.concepts-covered {
+  background-color: #1a1a19;
+  border-color: #2a2a28;
+}
+
+[data-md-color-scheme="slate"] details.concepts-covered summary {
+  color: var(--anthropic-light);
+  background-color: #1a1a19;
+}
+
+[data-md-color-scheme="slate"] details.concepts-covered summary:hover {
+  background-color: rgba(217, 119, 87, 0.08);
+}
+
+[data-md-color-scheme="slate"] details.concepts-covered .concepts-list {
+  color: var(--anthropic-light);
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  details.concepts-covered summary {
+    font-size: 0.95rem;
+    padding: 0.875rem 1rem;
+  }
+
+  details.concepts-covered .concepts-list {
+    padding: 0.625rem 1rem 1rem;
+    font-size: 0.85rem;
+  }
+}

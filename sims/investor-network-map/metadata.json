@@ -1,0 +1,281 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "dublin_core": {
+    "title": "Investor Network Map",
+    "creator": "AI for Investor Relations Transformation Course",
+    "subject": ["Investor Relations", "Stakeholder Analysis", "Investor Types", "Network Visualization", "Capital Markets"],
+    "description": "An interactive network visualization showing the relationships between different types of investors (institutional, retail, activist, hedge funds, etc.) and their connections to public companies. Uses graph theory to illustrate information flow and influence pathways in capital markets.",
+    "publisher": "Intelligent Textbook Series",
+    "date": "2025-01-19",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0"
+  },
+  "educational": {
+    "grade_level": "Executive/Professional Development (Undergraduate/Graduate equivalent)",
+    "subject_area": "Business - Investor Relations & Capital Markets",
+    "topic": "Investor Types, Market Dynamics, and Stakeholder Networks",
+    "learning_objectives": [
+      "Remember the major categories of investors in public markets",
+      "Understand how different investor types relate to companies and each other",
+      "Analyze the network structure to identify key influencers and relationship pathways",
+      "Evaluate which investor types should be prioritized for different IR objectives"
+    ],
+    "blooms_taxonomy": ["Remember", "Understand", "Analyze", "Evaluate"],
+    "duration_minutes": 60,
+    "prerequisites": [
+      "Basic understanding of public companies and stock markets",
+      "Familiarity with the concept of shareholders",
+      "Awareness that different investors have different goals",
+      "No technical skills required"
+    ],
+    "assessment_opportunities": [
+      "Can students identify and describe each investor type?",
+      "Can they explain relationship labels and connections?",
+      "Can they predict which investors care most about specific company events?",
+      "Can they design targeted IR communications for specific investor segments?"
+    ]
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "latest from unpkg CDN",
+    "canvas_width": "100%",
+    "canvas_height": "1000px",
+    "responsive": "fully responsive",
+    "dependencies": ["vis-network standalone library from unpkg CDN"],
+    "accessibility_features": [
+      "Keyboard navigation support",
+      "Screen reader compatible node labels",
+      "High contrast color scheme for nodes",
+      "Text-based information panel for node details"
+    ],
+    "browser_compatibility": ["Chrome", "Firefox", "Safari", "Edge"],
+    "mobile_friendly": "partial (best on desktop/tablet)"
+  },
+  "user_interface": {
+    "controls": [
+      {
+        "type": "checkbox_group",
+        "name": "Filter Investor Types",
+        "description": "Toggle visibility of different investor categories",
+        "purpose": "Focus analysis on specific investor segments"
+      },
+      {
+        "type": "button",
+        "name": "Reset View",
+        "description": "Reset network to default view and enable all filters",
+        "purpose": "Return to starting configuration"
+      },
+      {
+        "type": "button",
+        "name": "Re-layout Network",
+        "description": "Recalculate network physics and node positions",
+        "purpose": "Improve visualization clarity after manipulation"
+      },
+      {
+        "type": "mouse_interaction",
+        "name": "Click Node",
+        "description": "Click any node to see detailed description",
+        "purpose": "Learn about specific investor types"
+      },
+      {
+        "type": "mouse_interaction",
+        "name": "Drag Node",
+        "description": "Click and drag nodes to reposition",
+        "purpose": "Explore network structure manually"
+      },
+      {
+        "type": "mouse_interaction",
+        "name": "Zoom & Pan",
+        "description": "Mouse wheel to zoom, drag background to pan",
+        "purpose": "Navigate large network visualization"
+      }
+    ],
+    "visualizations": [
+      {
+        "type": "network_graph",
+        "description": "Force-directed graph showing investor types as nodes and relationships as edges",
+        "purpose": "Visualize complex stakeholder ecosystem structure"
+      },
+      {
+        "type": "legend",
+        "description": "Color-coded legend mapping colors to investor types",
+        "purpose": "Quick reference for node identification"
+      },
+      {
+        "type": "info_panel",
+        "description": "Dynamic panel displaying selected node details",
+        "purpose": "Provide educational context for each investor type"
+      }
+    ]
+  },
+  "simulation_model": {
+    "model_type": "Network graph visualization",
+    "methodology": "Graph theory with force-directed layout algorithm (Barnes-Hut simulation)",
+    "node_types": [
+      {
+        "type": "company",
+        "count": 1,
+        "description": "Central node representing the public company",
+        "color": "#FF6B6B",
+        "size": 40
+      },
+      {
+        "type": "institutional",
+        "count": 1,
+        "description": "Institutional investors (mutual funds, pension funds, insurance)",
+        "color": "#4ECDC4",
+        "size": 30,
+        "ownership_range": "60-80% of market cap"
+      },
+      {
+        "type": "retail",
+        "count": 1,
+        "description": "Individual retail investors",
+        "color": "#95E1D3",
+        "size": 25,
+        "ownership_range": "10-20% of market cap"
+      },
+      {
+        "type": "activist",
+        "count": 1,
+        "description": "Activist investors seeking influence",
+        "color": "#F38181",
+        "size": 28,
+        "ownership_range": "Variable (typically 5-15%)"
+      },
+      {
+        "type": "hedge",
+        "count": 1,
+        "description": "Hedge funds with active strategies",
+        "color": "#AA96DA",
+        "size": 28,
+        "ownership_range": "Variable"
+      },
+      {
+        "type": "sovereign",
+        "count": 1,
+        "description": "Sovereign wealth funds",
+        "color": "#FCBAD3",
+        "size": 26,
+        "ownership_range": "Long-term stakes"
+      },
+      {
+        "type": "insider",
+        "count": 1,
+        "description": "Company executives, directors, employees",
+        "color": "#FFFFD2",
+        "size": 24,
+        "ownership_range": "Varies by company (0.5-20%)"
+      },
+      {
+        "type": "analyst",
+        "count": 1,
+        "description": "Sell-side research analysts (influencers, not owners)",
+        "color": "#A8E6CF",
+        "size": 22,
+        "ownership_range": "N/A (not investors)"
+      },
+      {
+        "type": "esg",
+        "count": 1,
+        "description": "ESG-focused investors",
+        "color": "#FFD3B6",
+        "size": 24,
+        "ownership_range": "Growing category"
+      },
+      {
+        "type": "index",
+        "count": 1,
+        "description": "Passive index tracking funds",
+        "color": "#FFAAA5",
+        "size": 26,
+        "ownership_range": "Largest and growing (30-40%)"
+      }
+    ],
+    "edge_types": [
+      {
+        "label": "Capital & Governance",
+        "description": "Primary ownership and voting relationship"
+      },
+      {
+        "label": "Public Trading",
+        "description": "Active market trading relationship"
+      },
+      {
+        "label": "Influence & Pressure",
+        "description": "Activist engagement and pressure tactics"
+      },
+      {
+        "label": "Research & Coverage",
+        "description": "Analyst research and recommendations"
+      },
+      {
+        "label": "Sustainability Focus",
+        "description": "ESG criteria and disclosure requirements"
+      },
+      {
+        "label": "Passive Ownership",
+        "description": "Index-driven automatic ownership"
+      }
+    ],
+    "physics_parameters": {
+      "gravitationalConstant": -30000,
+      "springConstant": 0.001,
+      "springLength": 200,
+      "stabilization": true
+    },
+    "assumptions": [
+      "Network represents typical large-cap public company",
+      "Node sizes approximate relative ownership percentages",
+      "Edge thickness represents relationship strength/frequency",
+      "Simplified to 10 major investor categories for clarity"
+    ],
+    "limitations": [
+      "Does not represent specific company ownership structure",
+      "Simplified ownership percentages (actual varies widely)",
+      "Static snapshot (real networks change over time)",
+      "Omits intermediaries like proxy advisors and custodians",
+      "Does not model dynamic behaviors like trading or voting",
+      "Geographic and sector differences not represented"
+    ]
+  },
+  "pedagogical_context": {
+    "course_chapter": "Chapter 3: Investor Types and Market Dynamics",
+    "related_concepts": [
+      "Institutional vs. Retail Investors",
+      "Active vs. Passive Investment",
+      "Activist Shareholders",
+      "Sell-Side Analysts",
+      "ESG Investing",
+      "Stakeholder Mapping",
+      "Investor Targeting"
+    ],
+    "instructional_strategy": "Interactive exploration with scaffolded scenarios from simple to complex",
+    "cognitive_load": "Medium - multiple entities but clear visual structure",
+    "learning_progression": [
+      "Identify and learn about each investor type individually",
+      "Understand direct company-investor relationships",
+      "Explore indirect investor-to-investor connections",
+      "Apply filtering to focus on specific scenarios",
+      "Evaluate strategic priorities based on network structure"
+    ],
+    "common_misconceptions": [
+      "All investors have the same goals (actually highly diverse objectives)",
+      "Investors only connect to the company (they influence each other)",
+      "Retail investors don't matter (growing influence through social media)",
+      "Passive investors are disengaged (actually vote on governance matters)",
+      "Analysts own stock in companies they cover (actually independent researchers)"
+    ]
+  },
+  "integration": {
+    "mkdocs_path": "/docs/sims/investor-network-map/",
+    "chapter_reference": "../../chapters/03-investor-types-market-dynamics/index.md",
+    "related_microsims": [],
+    "embedding_height": "1000px",
+    "fullscreen_link": "./main.html"
+  },
+  "version": "1.0.0",
+  "last_updated": "2025-01-19"
+}

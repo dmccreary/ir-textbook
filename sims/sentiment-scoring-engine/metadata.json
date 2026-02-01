@@ -1,0 +1,203 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "dublin_core": {
+    "title": "Sentiment Scoring Engine",
+    "creator": "AI for Investor Relations Transformation Course",
+    "subject": ["Investor Relations", "Sentiment Analysis", "Natural Language Processing", "Financial Communications", "AI Analytics"],
+    "description": "An interactive MicroSim demonstrating how lexicon-based sentiment analysis works on financial text, using a simplified approach inspired by the Loughran-McDonald dictionary. Students can input or select financial text samples and observe real-time sentiment scoring with visual feedback.",
+    "publisher": "Intelligent Textbook Series",
+    "date": "2025-01-19",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0"
+  },
+  "educational": {
+    "grade_level": "Executive/Professional Development (Undergraduate/Graduate equivalent)",
+    "subject_area": "Business - Investor Relations & Financial Communications",
+    "topic": "Sentiment Analysis and Natural Language Processing in IR",
+    "learning_objectives": [
+      "Understand how lexicon-based sentiment analysis calculates scores from financial text",
+      "Apply sentiment analysis concepts to evaluate investor communications",
+      "Analyze how specific word choices impact overall sentiment scores",
+      "Evaluate the strengths and limitations of lexicon-based sentiment methods"
+    ],
+    "blooms_taxonomy": ["Understand", "Apply", "Analyze", "Evaluate"],
+    "duration_minutes": 30,
+    "prerequisites": [
+      "Basic understanding of investor relations communications",
+      "Familiarity with earnings calls and press releases",
+      "Awareness that AI can analyze text for patterns"
+    ],
+    "assessment_opportunities": [
+      "Can students explain why certain texts score as positive/negative?",
+      "Can they predict approximate scores before analyzing new text?",
+      "Can they draft communications with intentional sentiment targets?",
+      "Can they articulate limitations of lexicon-based approaches?"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvas_width": 800,
+    "canvas_height": 682,
+    "draw_height": 500,
+    "control_height": 180,
+    "responsive": "width-responsive",
+    "dependencies": ["p5.js CDN"],
+    "accessibility_features": [
+      "ARIA labels for screen readers",
+      "High contrast color scheme",
+      "Keyboard navigation support",
+      "Large text sizes (16px minimum)"
+    ],
+    "browser_compatibility": ["Chrome", "Firefox", "Safari", "Edge"],
+    "mobile_friendly": true
+  },
+  "user_interface": {
+    "controls": [
+      {
+        "type": "textarea",
+        "name": "Text Input",
+        "description": "Enter or paste financial text for sentiment analysis",
+        "purpose": "Allows users to input custom text for real-time sentiment scoring"
+      },
+      {
+        "type": "button",
+        "name": "Positive Example",
+        "description": "Loads a sample positive earnings announcement",
+        "purpose": "Demonstrates high positive sentiment score"
+      },
+      {
+        "type": "button",
+        "name": "Negative Example",
+        "description": "Loads a sample negative financial communication",
+        "purpose": "Demonstrates high negative sentiment score"
+      },
+      {
+        "type": "button",
+        "name": "Neutral Example",
+        "description": "Loads a sample neutral factual statement",
+        "purpose": "Demonstrates neutral sentiment score near zero"
+      },
+      {
+        "type": "button",
+        "name": "Mixed Example",
+        "description": "Loads a sample text with both positive and negative elements",
+        "purpose": "Demonstrates how mixed sentiment is calculated"
+      },
+      {
+        "type": "button",
+        "name": "Clear Text",
+        "description": "Clears the text input area",
+        "purpose": "Resets the simulation for new input"
+      }
+    ],
+    "visualizations": [
+      {
+        "type": "sentiment_gauge",
+        "description": "Color-coded horizontal gauge showing sentiment score from -1.0 (red/negative) to +1.0 (green/positive)",
+        "purpose": "Provides immediate visual feedback on overall sentiment"
+      },
+      {
+        "type": "metrics_display",
+        "description": "Shows total words, positive word count, negative word count, and net sentiment",
+        "purpose": "Breaks down the components of the sentiment calculation"
+      },
+      {
+        "type": "word_list",
+        "description": "Displays the specific positive and negative words found in the text",
+        "purpose": "Shows which words contributed to the sentiment score"
+      }
+    ]
+  },
+  "simulation_model": {
+    "model_type": "Lexicon-based sentiment analysis",
+    "methodology": "Word-counting approach using financial sentiment dictionaries",
+    "variables": [
+      {
+        "name": "inputText",
+        "description": "The text being analyzed",
+        "type": "string"
+      },
+      {
+        "name": "sentimentScore",
+        "description": "Overall sentiment score from -1.0 to +1.0",
+        "type": "float",
+        "range": [-1.0, 1.0]
+      },
+      {
+        "name": "positiveCount",
+        "description": "Number of positive words detected",
+        "type": "integer"
+      },
+      {
+        "name": "negativeCount",
+        "description": "Number of negative words detected",
+        "type": "integer"
+      },
+      {
+        "name": "totalWords",
+        "description": "Total word count in input text",
+        "type": "integer"
+      }
+    ],
+    "equations": [
+      "netSentiment = positiveCount - negativeCount",
+      "sentimentScore = netSentiment / max(totalWords × 0.3, 1)",
+      "sentimentScore = constrain(sentimentScore, -1, 1)"
+    ],
+    "lexicons": {
+      "positive_words": 20,
+      "negative_words": 20,
+      "source": "Simplified subset inspired by Loughran-McDonald financial dictionary"
+    },
+    "assumptions": [
+      "All positive words have equal weight (+1)",
+      "All negative words have equal weight (-1)",
+      "Word context and negation are not considered",
+      "Scoring is based solely on word presence, not frequency"
+    ],
+    "limitations": [
+      "Does not detect negation (e.g., 'not bad' treated as negative)",
+      "Cannot understand context (e.g., 'address concerns' vs 'concerns remain')",
+      "Misses sarcasm and irony",
+      "Simplified lexicon much smaller than production systems (40 vs 2000+ words)",
+      "Does not account for word position or sentence structure",
+      "No handling of domain-specific phrases or multi-word expressions"
+    ]
+  },
+  "pedagogical_context": {
+    "course_chapter": "Chapter 7: Sentiment Analysis Methods",
+    "related_concepts": [
+      "Lexicon-Based Sentiment Analysis",
+      "Loughran-McDonald Dictionary",
+      "Financial-Specific NLP",
+      "FinBERT and Transformer Models",
+      "Sentiment Analysis in IR Communications"
+    ],
+    "instructional_strategy": "Guided exploration with sample texts followed by open experimentation",
+    "cognitive_load": "Medium - focuses on single concept but requires understanding of text analysis",
+    "learning_progression": [
+      "Observe pre-loaded examples to see range of sentiment scores",
+      "Experiment with adding/removing words to see impact",
+      "Apply to real financial text",
+      "Critically evaluate limitations through edge cases"
+    ],
+    "common_misconceptions": [
+      "Sentiment analysis is perfectly objective (it reflects lexicon design choices)",
+      "More negative words always means negative overall (context and density matter)",
+      "Simple word counting is sufficient for production systems (modern systems use ML)",
+      "Negative sentiment is always bad for IR (transparency can build trust)"
+    ]
+  },
+  "integration": {
+    "mkdocs_path": "/docs/sims/sentiment-scoring-engine/",
+    "chapter_reference": "../../chapters/07-sentiment-analysis-methods/index.md",
+    "related_microsims": [],
+    "embedding_height": "682px",
+    "fullscreen_link": "./main.html"
+  },
+  "version": "1.0.0",
+  "last_updated": "2025-01-19"
+}

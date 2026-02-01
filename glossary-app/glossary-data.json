@@ -1,0 +1,2733 @@
+{
+  "metadata": {
+    "title": "AI for Investor Relations - Glossary",
+    "version": "2.0",
+    "totalTerms": 293,
+    "generated": "2025-11-06"
+  },
+  "categories": {
+    "AGENTIC": {
+      "classifierName": "Agentic AI Systems",
+      "color": "#6366f1",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AI-CONT": {
+      "classifierName": "AI Content Creation",
+      "color": "#8b5cf6",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AI-GOV": {
+      "classifierName": "AI Governance",
+      "color": "#a855f7",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AI-TECH": {
+      "classifierName": "AI Technology",
+      "color": "#ec4899",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ANLYT": {
+      "classifierName": "Analytics & Predictions",
+      "color": "#06b6d4",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DATA-GOV": {
+      "classifierName": "Data Governance",
+      "color": "#10b981",
+      "font": {
+        "color": "white"
+      }
+    },
+    "INVEST": {
+      "classifierName": "Investor Types",
+      "color": "#f59e0b",
+      "font": {
+        "color": "black"
+      }
+    },
+    "IR-FOUND": {
+      "classifierName": "IR Foundations",
+      "color": "#ef4444",
+      "font": {
+        "color": "white"
+      }
+    },
+    "IR-OPS": {
+      "classifierName": "IR Operations",
+      "color": "#f97316",
+      "font": {
+        "color": "white"
+      }
+    },
+    "REG-COMP": {
+      "classifierName": "Regulatory Compliance",
+      "color": "#84cc16",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TRANSFORM": {
+      "classifierName": "Transformation & Strategy",
+      "color": "#3b82f6",
+      "font": {
+        "color": "white"
+      }
+    },
+    "VALMET": {
+      "classifierName": "Valuation Metrics",
+      "color": "#eab308",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "terms": [
+    {
+      "name": "Access Control Models",
+      "definition": "Framework defining rules and methods for restricting access to resources based on user identity, roles, or attributes.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 138,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Agent Orchestration",
+      "definition": "The coordination and management of multiple autonomous AI agents to work together toward achieving complex tasks.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 113,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Agent-Based IR Workflows",
+      "definition": "Investor relations processes that leverage autonomous AI agents to automate routine tasks and decision-making.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 115,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Agentic AI Systems",
+      "definition": "AI architectures that operate autonomously, making decisions and taking actions without continuous human intervention. Agentic AI systems represent an evolution from traditional AI that requires explicit instructions for each task. They can plan, execute, and adapt based on goals rather than predefined scripts.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 111,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Agents for Data Retrieval",
+      "definition": "Autonomous AI systems designed to locate, extract, and deliver relevant information from various data sources.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 120,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "AI Briefing Generation",
+      "definition": "Automated creation of executive summaries and reports using artificial intelligence technologies.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 122,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "AI Ethics for Finance",
+      "definition": "Principles and practices ensuring responsible and fair use of artificial intelligence in financial services and markets.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 80,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "AI for Content Creation",
+      "definition": "Application of artificial intelligence technologies to generate written, visual, or multimedia materials.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 70,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AI Fundamentals",
+      "definition": "Core concepts and principles underlying artificial intelligence, including learning algorithms, pattern recognition, and decision-making systems.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 65,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AI Governance Models",
+      "definition": "Frameworks establishing policies, processes, and oversight mechanisms for responsible AI development and deployment.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 77,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AI Sentiment Tracking",
+      "definition": "Automated monitoring and analysis of market participants' attitudes, emotions, and opinions regarding a company or securities.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 210,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "AI Transformation Strategy",
+      "definition": "Comprehensive plan for integrating artificial intelligence technologies across organizational functions, processes, and culture. An effective AI transformation strategy addresses technology selection, talent development, change management, and governance while aligning with business objectives.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 170,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AI-Driven Dashboards",
+      "definition": "Interactive visual displays powered by artificial intelligence that provide real-time insights and analytics.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 124,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AI-Enhanced Press Releases",
+      "definition": "News announcements that leverage artificial intelligence for drafting, optimization, or distribution.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 72,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Algorithmic Bias Risk",
+      "definition": "Potential for systematic errors in AI systems that lead to unfair or discriminatory outcomes.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 87,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Algorithmic Trading Impact",
+      "definition": "Effects of automated, computer-driven trading strategies on market behavior, liquidity, and price discovery.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 105,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "AlphaSense Search",
+      "definition": "AI-powered research platform providing intelligent search and analysis across earnings transcripts, filings, and analyst research. AlphaSense enables IR teams to quickly identify market trends, competitive intelligence, and investor concerns through natural language queries across millions of documents.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 217,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Amazon Letter Insights",
+      "definition": "Strategic lessons from Amazon's shareholder letter approach emphasizing long-term thinking, customer obsession, and narrative consistency.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 281,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Analyst Coverage Metrics",
+      "definition": "Quantitative measures tracking the number, quality, and changes in financial analyst research coverage of a company.",
+      "example": "",
+      "category": "VALMET",
+      "id": 202,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Analyst Coverage Review",
+      "definition": "Systematic evaluation of financial analysts who research and report on a company's performance and prospects.",
+      "example": "",
+      "category": "INVEST",
+      "id": 59,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Analyst Report Insights",
+      "definition": "Key findings, recommendations, and perspectives extracted from financial analyst research publications.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 96,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Analyzing Feedback",
+      "definition": "Process of examining and interpreting responses, comments, and reactions from stakeholders.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 97,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Analyzing Order Flow",
+      "definition": "Examination of buy and sell order patterns to understand market dynamics and investor sentiment.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 109,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Annual General Meetings",
+      "definition": "Yearly gatherings where shareholders vote on corporate matters, elect directors, and receive company updates.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 18,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Annual Meeting AI",
+      "definition": "Artificial intelligence tools supporting annual general meeting preparation, logistics, shareholder Q&A, and post-event analysis.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 238,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Anomaly Detection AI",
+      "definition": "Machine learning systems identifying unusual patterns, outliers, or deviations from expected behavior in data streams.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 242,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Apple Earnings Strategy",
+      "definition": "Best practices derived from Apple's disciplined approach to earnings guidance, communication consistency, and expectations management.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 280,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Assessing Risk Exposure",
+      "definition": "Evaluation of potential threats and vulnerabilities facing an organization or function.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 147,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Audit Trail Requirements",
+      "definition": "Specifications for maintaining complete, chronological records of system activities, changes, and transactions.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 140,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Automated IR Reports",
+      "definition": "System-generated documents summarizing investor relations activities, market conditions, and engagement metrics without manual compilation.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 240,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Automated Report Tools",
+      "definition": "Software systems that generate documents and analyses without manual intervention.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 123,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Automated Risk Monitoring",
+      "definition": "Continuous AI-powered surveillance of potential threats, compliance issues, and operational hazards.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 145,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Autonomous AI Agents",
+      "definition": "Self-directed artificial intelligence systems capable of perceiving, reasoning, and acting independently.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 112,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Beat-and-Raise Tactics",
+      "definition": "Strategy of exceeding earnings expectations and simultaneously increasing forward guidance.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 64,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Benchmarking Algorithms",
+      "definition": "Computational methods comparing company metrics, practices, or performance against peer groups or industry standards.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 248,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Berkshire AGM Lessons",
+      "definition": "Strategic insights from Berkshire Hathaway's annual meeting approach emphasizing transparency, direct shareholder access, and long-term value communication.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 282,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Beta Risk Measurement",
+      "definition": "Quantification of a security's volatility relative to the broader market, indicating systematic risk exposure.",
+      "example": "",
+      "category": "VALMET",
+      "id": 205,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Bias in Financial Data",
+      "definition": "Systematic distortions or inaccuracies in datasets used for financial analysis and decision-making.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 85,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Big Data Aggregation",
+      "definition": "Process of collecting, combining, and organizing large volumes of diverse data from multiple sources for analysis.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 214,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Bitcoin ETF Monitoring",
+      "definition": "Tracking regulatory developments, market dynamics, and investor interest in cryptocurrency exchange-traded fund products.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 288,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Blackout Period Management",
+      "definition": "Oversight of timeframes when insiders cannot trade company securities or share material nonpublic information.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 46,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Bloomberg IR Integration",
+      "definition": "Connecting investor relations systems with Bloomberg Terminal data, analytics, and communication capabilities.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 251,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Boosting Digital Fluency",
+      "definition": "Enhancing organizational capability to effectively use digital tools, data, and technologies.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 190,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Broadridge Proxy Tools",
+      "definition": "Software solutions from Broadridge Financial Solutions supporting proxy distribution, vote tabulation, and shareholder communication.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 270,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Build vs. Buy Choices",
+      "definition": "Decision framework for determining whether to develop capabilities internally or acquire them externally.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 154,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Building a Business Case",
+      "definition": "Process of documenting rationale, benefits, costs, and risks to justify a proposed investment or initiative.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 166,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Building AI Literacy",
+      "definition": "Developing understanding of artificial intelligence concepts, capabilities, and limitations across an organization.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 188,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Buy-Side Analysts",
+      "definition": "Investment professionals who research securities and make recommendations for their own firms' portfolios.",
+      "example": "",
+      "category": "INVEST",
+      "id": 13,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "C-Suite Communications",
+      "definition": "Strategic messaging to and from an organization's senior executive leadership team.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 163,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Calculating AI ROI",
+      "definition": "Measuring financial returns generated by artificial intelligence investments relative to their costs.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 167,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Captur",
+      "definition": "ing Lessons Learned Systematic documentation of insights, successes, and failures from completed projects or experiences.",
+      "example": "",
+      "category": "OTHER",
+      "id": null,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Change Management Models",
+      "definition": "Structured frameworks for guiding organizations through transitions and transformations.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 159,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Change Management Plans",
+      "definition": "Detailed strategies for transitioning individuals, teams, and organizations from current to future states.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 158,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Chatbot Query Handling",
+      "definition": "AI-powered conversational systems responding to investor inquiries through natural language interaction.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 239,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Comparable Company AI",
+      "definition": "Machine learning systems identifying and analyzing peer companies for valuation benchmarking and competitive positioning.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 267,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Compliance AI Monitors",
+      "definition": "Automated systems continuously surveilling communications, activities, and processes for regulatory adherence.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 220,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Compliance Automation",
+      "definition": "Use of technology to streamline adherence to regulations, policies, and standards.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 144,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Compliance Monitoring",
+      "definition": "Ongoing surveillance to ensure adherence to regulations, policies, and ethical standards.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 142,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Compliance Review Tools",
+      "definition": "Software systems that check materials, processes, or activities for regulatory adherence.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 76,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Computershare Services",
+      "definition": "Transfer agent and shareholder services provided by Computershare for managing stock ownership records and distributions.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 271,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Consensus Estimates",
+      "definition": "Aggregated forecasts from multiple financial analysts regarding a company's future financial performance.",
+      "example": "",
+      "category": "INVEST",
+      "id": 60,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Corporate Valuation Strategy",
+      "definition": "Approach to communicating and influencing market perception of a company's intrinsic worth.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 2,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Cost Of Capital Models",
+      "definition": "Analytical frameworks calculating the required return for investments based on risk profiles and market conditions.",
+      "example": "",
+      "category": "VALMET",
+      "id": 264,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Cost-Benefit Analysis",
+      "definition": "Systematic comparison of the expected costs and benefits of a proposed action or investment.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 168,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Crisis AI Assistance",
+      "definition": "Artificial intelligence tools supporting rapid response, scenario planning, and communication during corporate emergencies or market disruptions.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 221,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Cross-Functional Teams",
+      "definition": "Groups composed of members from different organizational departments working toward common goals.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 162,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Cybersecurity Protocols",
+      "definition": "Procedures and technical measures protecting information systems and data from unauthorized access, attacks, or breaches.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 258,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Data Governance Basics",
+      "definition": "Fundamental principles for managing data quality, security, privacy, and compliance.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 131,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Data Security Standards",
+      "definition": "Technical and procedural requirements for protecting information from unauthorized access or modification.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 136,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "DCF Valuation Tools",
+      "definition": "Software implementing discounted cash flow analysis to estimate intrinsic company value based on projected future cash flows.",
+      "example": "",
+      "category": "VALMET",
+      "id": 266,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "DealCloud IR CRM",
+      "definition": "Customer relationship management platform specifically designed for investor relations targeting, tracking, and engagement management.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 273,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Deep Learning Forecasts",
+      "definition": "Predictions generated using multi-layered neural networks trained on complex patterns in large datasets.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 292,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Designing Dashboards",
+      "definition": "Creating visual interfaces that present key information and enable data exploration.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 125,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Designing Pilot Programs",
+      "definition": "Planning small-scale implementations to test and validate approaches before broader deployment.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 157,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Designing Training Programs",
+      "definition": "Creating educational initiatives to develop specific skills and knowledge across an organization.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 187,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Detecting Hallucinations",
+      "definition": "Process of identifying instances where AI systems generate false or fabricated information.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 82,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Detecting Model Drift",
+      "definition": "Monitoring changes in AI system performance over time as underlying data patterns evolve.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 88,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Developing AI Policy",
+      "definition": "Creating guidelines and rules governing artificial intelligence development, deployment, and use.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 78,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Developing Narratives",
+      "definition": "Crafting compelling stories that communicate complex information in accessible and persuasive ways.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 165,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Disclosure AI Policies",
+      "definition": "Organizational guidelines governing the use of artificial intelligence in preparing, reviewing, and distributing public company disclosures.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 231,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Disclosure Controls",
+      "definition": "Processes ensuring accurate and timely public reporting of material information.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 32,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Disclosure Timing Rules",
+      "definition": "Regulations governing when and how companies must release material information to the public.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 43,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Dividend Yield Trends",
+      "definition": "Patterns in the ratio of annual dividends to stock price over time, indicating income return and payout policy evolution.",
+      "example": "",
+      "category": "VALMET",
+      "id": 206,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Documenting Best Practices",
+      "definition": "Recording proven methods and approaches that consistently produce superior results.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 196,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Drafting Investor Memos",
+      "definition": "Creating written communications that inform potential or current investors about company developments.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 73,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Driving Improvement Cycles",
+      "definition": "Leading systematic efforts to continuously enhance processes, outcomes, and capabilities.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 194,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Earnings Call Scripts",
+      "definition": "Prepared remarks for management presentations during quarterly earnings conference calls.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 21,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Earnings Guidance Strategy",
+      "definition": "Approach to providing forward-looking financial performance expectations to investors and analysts.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 61,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Earnings Per Share Growth",
+      "definition": "Rate of change in company profits allocated to each outstanding share over time, measuring financial performance improvement.",
+      "example": "",
+      "category": "VALMET",
+      "id": 208,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Earnings Prep Simulators",
+      "definition": "Interactive tools enabling practice and scenario testing for earnings announcements, calls, and investor Q&A sessions.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 227,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Earnings Reporting Process",
+      "definition": "Systematic procedures for preparing, reviewing, and publishing quarterly financial results.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 4,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Earnings Surprise AI",
+      "definition": "Machine learning systems predicting likelihood and magnitude of actual results differing from consensus analyst estimates.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 222,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "EDGAR Data Mining",
+      "definition": "Extraction and analysis of information from the SEC's Electronic Data Gathering, Analysis, and Retrieval system.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 250,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Encryption Best Practices",
+      "definition": "Recommended methods for protecting data confidentiality through cryptographic techniques.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 137,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Enron Detection Failures",
+      "definition": "Lessons from the catastrophic failure to identify and prevent massive accounting fraud at Enron Corporation.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 283,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Enterprise LLM Usage",
+      "definition": "Organizational deployment of large language models for internal business applications with appropriate governance and security.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 218,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Enterprise Value Metrics",
+      "definition": "Financial measures assessing a company's total worth including debt and excluding cash.",
+      "example": "",
+      "category": "VALMET",
+      "id": 56,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Escalation Workflows",
+      "definition": "Defined processes for elevating issues requiring higher authority or expertise.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 183,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "ESG Automation Tools",
+      "definition": "Software streamlining environmental, social, and governance data collection, reporting, and stakeholder communication.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 223,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Evaluating AI Vendors",
+      "definition": "Assessment of third-party providers offering artificial intelligence products or services.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 151,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Facial Ethics In IR",
+      "definition": "Ethical considerations regarding use of facial recognition, emotion detection, or biometric analysis in investor relations contexts.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 291,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "FactSet Benchmarking",
+      "definition": "Comparative analysis tools from FactSet Research Systems for evaluating company performance against peers and market indices.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 252,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Feature Engineering IR",
+      "definition": "Process of selecting, transforming, and creating variables from raw data to improve machine learning model performance in investor relations applications.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 297,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Feedback Loop Design",
+      "definition": "Creating systems that capture results, analyze performance, and inform future actions.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 193,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Financial Data Privacy",
+      "definition": "Protection of confidential financial information from unauthorized access or disclosure.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 134,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Forecasting Investor Behavior",
+      "definition": "Predicting actions and decisions of current or potential investors based on historical patterns and current conditions.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 101,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Form 10-K Overview",
+      "definition": "Understanding the annual comprehensive report required by the SEC detailing company performance and risks.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 34,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Form 10-Q Essentials",
+      "definition": "Key components of the quarterly SEC filing providing updates on financial condition and operations.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 35,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Form 8-K Summary",
+      "definition": "Current report filed with the SEC to announce material events affecting a company.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 36,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Forward-Looking Statements",
+      "definition": "Projections or expectations about future events, performance, or conditions.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 40,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Fraud Prevention Models",
+      "definition": "Analytical systems detecting patterns indicative of financial statement manipulation, misrepresentation, or fraudulent activities.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 243,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Free Float Metrics",
+      "definition": "Measures quantifying shares readily available for public trading, excluding locked-in holdings by insiders, governments, or strategic investors.",
+      "example": "",
+      "category": "VALMET",
+      "id": 259,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "GameStop Squeeze AI",
+      "definition": "Analysis and lessons from the 2021 GameStop short squeeze involving retail investors, social media coordination, and market dynamics.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 287,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "GDPR Data Compliance",
+      "definition": "Adherence to General Data Protection Regulation requirements for handling personal information of European Union residents.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 257,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "GenAI Earnings Reports",
+      "definition": "Financial results documentation created or enhanced using generative artificial intelligence technologies.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 71,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Generative AI Tools",
+      "definition": "Software applications that create new content including text, images, or code based on learned patterns.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 68,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Generative Script AI",
+      "definition": "Large language models creating original earnings call scripts, investor presentations, or communication materials based on prompts and data.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 289,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Glass Lewis Analysis",
+      "definition": "Research and proxy voting recommendations provided by Glass Lewis & Co. to institutional investors on governance matters.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 236,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Guidance AI Forecasting",
+      "definition": "Machine learning systems generating or refining forward-looking financial performance estimates for investor communication.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 228,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Guidance Withdrawal Risks",
+      "definition": "Potential negative consequences of retracting previously provided forward-looking financial estimates.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 62,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Handling Exceptions",
+      "definition": "Managing situations that fall outside standard processes or automated workflows.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 184,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Hedge Funds",
+      "definition": "Investment partnerships using diverse strategies including leverage and derivatives to generate returns.",
+      "example": "",
+      "category": "INVEST",
+      "id": 9,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "High-Frequency Trading",
+      "definition": "Algorithmic trading strategies executing large volumes of transactions at extremely high speeds.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 106,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Human-in-the-Loop Models",
+      "definition": "AI systems designed with human oversight and intervention at critical decision points.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 181,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Identifying Automation Gains",
+      "definition": "Analyzing processes to determine where technology can improve efficiency, accuracy, or speed.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 180,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Identifying Quick Wins",
+      "definition": "Finding opportunities for rapid, visible success to build momentum for larger initiatives.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 173,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Implied Volatility AI",
+      "definition": "Machine learning models analyzing options pricing to infer market expectations of future stock price fluctuations.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 263,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Insider Trading Rules",
+      "definition": "Regulations prohibiting trading securities based on material nonpublic information.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 47,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Institutional Share Trends",
+      "definition": "Patterns in ownership levels, turnover, and positioning among pension funds, mutual funds, and other large investors.",
+      "example": "",
+      "category": "VALMET",
+      "id": 260,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Integrating Enterprise AI",
+      "definition": "Connecting artificial intelligence capabilities with existing organizational systems, processes, and data.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 199,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Integrating Live Data",
+      "definition": "Connecting real-time information streams to analytical systems or workflows.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 121,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Internal Control Systems",
+      "definition": "Processes ensuring reliable financial reporting, compliance with laws, and operational effectiveness.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 31,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Intralinks Data Rooms",
+      "definition": "Secure virtual workspaces provided by Intralinks for sharing confidential documents during transactions, due diligence, or controlled disclosures.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 272,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Investment Bank Relations",
+      "definition": "Connections and interactions with financial institutions that underwrite securities and provide advisory services.",
+      "example": "",
+      "category": "INVEST",
+      "id": 15,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Investor Presentations",
+      "definition": "Formal communications delivered to current or potential investors explaining business strategy, performance, and prospects.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 19,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Investor Relations Function",
+      "definition": "Corporate responsibility for communicating with shareholders, analysts, and other stakeholders about company performance and strategy. The investor relations function serves as the primary interface between public companies and the investment community, balancing transparency requirements with strategic positioning.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 1,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Investor Targeting AI",
+      "definition": "Machine learning systems identifying and prioritizing potential investors whose profiles align with company characteristics and investment thesis.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 225,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Investor Targeting Methods",
+      "definition": "Strategies for identifying and engaging potential shareholders whose investment profiles align with company characteristics.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 5,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Ipreo IR Solutions",
+      "definition": "Investor relations management platform from Ipreo providing CRM, analytics, and communication tools for market engagement.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 269,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "IR Engagement Metrics",
+      "definition": "Quantitative measures assessing the effectiveness of investor relations activities.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 127,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "IR Operating Framework",
+      "definition": "Structured approach defining roles, processes, and standards for investor relations activities.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 177,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "IR Transformation Plan",
+      "definition": "Comprehensive strategy for evolving investor relations capabilities, particularly through technology adoption.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 200,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "ISS Recommendation AI",
+      "definition": "Tools analyzing Institutional Shareholder Services voting guidance and predicting proxy vote outcomes on governance matters.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 235,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Key Performance Indicators",
+      "definition": "Quantifiable measures used to evaluate success in achieving objectives.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 126,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Knowledge Sharing Systems",
+      "definition": "Platforms and processes enabling capture, organization, and distribution of organizational expertise.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 197,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Large Language Models",
+      "definition": "AI systems trained on vast text datasets capable of understanding and generating human-like language.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 67,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Launching Upskilling Plans",
+      "definition": "Initiating programs to enhance employee capabilities and adapt to changing role requirements.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 189,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Machine Learning Basics",
+      "definition": "Fundamental concepts of systems that improve performance through experience and data exposure.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 66,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Managing Audit Logs",
+      "definition": "Overseeing systematic records of system activities, user actions, and data modifications.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 141,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Managing Data Quality",
+      "definition": "Ensuring information accuracy, completeness, consistency, and reliability.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 132,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Managing Model Drift",
+      "definition": "Addressing degradation in AI system performance as data patterns change over time.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 89,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Market Cap Fluctuations",
+      "definition": "Variations in total market value of outstanding shares over time, reflecting investor sentiment and performance perceptions.",
+      "example": "",
+      "category": "VALMET",
+      "id": 204,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Market Capitalization",
+      "definition": "Total market value of a company's outstanding shares calculated by multiplying share price by shares outstanding.",
+      "example": "",
+      "category": "VALMET",
+      "id": 58,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Market Communication Strategy",
+      "definition": "Comprehensive plan for messaging to investors, analysts, and other market participants.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 3,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Market Liquidity Trends",
+      "definition": "Patterns in the ease of buying or selling securities without significant price impact.",
+      "example": "",
+      "category": "VALMET",
+      "id": 49,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Market Microstructure",
+      "definition": "Mechanics of how orders are processed, prices are formed, and trades are executed in financial markets.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 107,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Material Information",
+      "definition": "Facts that reasonable investors would consider important in making investment decisions.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 23,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Materiality AI Assessment",
+      "definition": "Automated evaluation of whether information is significant enough to influence reasonable investor decisions requiring public disclosure.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 230,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Materiality Assessment",
+      "definition": "Process of determining whether information is significant enough to influence investment decisions.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 42,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "MCP Architecture Overview",
+      "definition": "Framework and structure of the Model Context Protocol system for AI integration.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 117,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "MCP Integration Paths",
+      "definition": "Methods and approaches for implementing Model Context Protocol capabilities within existing systems.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 119,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "MCP Security Standards",
+      "definition": "Specifications for ensuring safe and compliant operation of Model Context Protocol implementations.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 118,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "MD&A Requirements",
+      "definition": "Regulatory specifications for Management's Discussion and Analysis section explaining financial results and future outlook.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 38,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Meeting Effectiveness",
+      "definition": "Measure of how well investor interactions achieve intended objectives and advance relationships.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 129,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Milestone Planning",
+      "definition": "Defining specific, measurable achievements marking progress toward larger goals.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 174,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Mitigating AI Bias",
+      "definition": "Actions taken to reduce or eliminate systematic errors in artificial intelligence systems.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 86,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Mitigating IR Risk",
+      "definition": "Strategies for reducing exposure to threats facing investor relations functions.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 148,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "ML Model Calibration",
+      "definition": "Process of adjusting machine learning system parameters and thresholds to improve prediction accuracy and reliability.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 212,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Model Context Protocol",
+      "definition": "Standard framework enabling secure, structured communication between AI models and enterprise systems.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 116,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Model Training Datasets",
+      "definition": "Collections of historical examples used to teach machine learning systems patterns and relationships for making predictions.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 298,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Modeling Investor Behavior",
+      "definition": "Creating computational representations of how investors make decisions and respond to information.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 103,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Monitoring AI Models",
+      "definition": "Ongoing surveillance of artificial intelligence system performance, accuracy, and adherence to intended behavior.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 90,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Monitoring Social Media",
+      "definition": "Systematic tracking of online conversations, mentions, and sentiment across social platforms.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 94,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Multi-Agent Coordination",
+      "definition": "Orchestration of multiple autonomous AI systems working together toward shared objectives.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 114,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Multiples Analysis AI",
+      "definition": "Machine learning systems calculating and comparing valuation ratios across companies to assess relative pricing and investment attractiveness.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 268,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Mutual Funds",
+      "definition": "Investment vehicles pooling money from multiple investors to purchase diversified portfolios of securities.",
+      "example": "",
+      "category": "INVEST",
+      "id": 10,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Narrative Consistency",
+      "definition": "Maintaining coherent and aligned messaging across different communications and time periods.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 74,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Nasdaq IR Tools",
+      "definition": "Investor relations solutions provided by Nasdaq including press release distribution, webcasting, and shareholder analytics.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 216,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Natural Language Processing",
+      "definition": "AI techniques for analyzing, understanding, and generating human language.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 92,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Neural Net Predictions",
+      "definition": "Forecasts generated by artificial neural network architectures trained to recognize complex patterns in data.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 293,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "News Aggregation AI",
+      "definition": "Automated systems collecting, organizing, and summarizing relevant news articles from diverse sources.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 255,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "News Sentiment Analysis",
+      "definition": "Automated assessment of tone and implications in media coverage of companies or topics.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 95,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "NLP For Transcripts",
+      "definition": "Natural language processing techniques extracting insights, sentiment, and topics from earnings call transcripts and investor conversations.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 213,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Nonpublic Information",
+      "definition": "Material facts not yet disclosed to the general public through appropriate channels.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 24,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Operating Model Design",
+      "definition": "Creation of structures defining how an organization or function operates to deliver value.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 176,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Ownership Concentration",
+      "definition": "Degree to which shares are held by a small number of large investors versus distributed among many smaller holders.",
+      "example": "",
+      "category": "VALMET",
+      "id": 51,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "P/E Ratio Insights",
+      "definition": "Understanding and interpreting price-to-earnings multiples for valuation and comparison purposes.",
+      "example": "",
+      "category": "VALMET",
+      "id": 55,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Peer Benchmarking Tools",
+      "definition": "Resources comparing company metrics and practices against similar organizations.",
+      "example": "",
+      "category": "VALMET",
+      "id": 53,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Peer Valuation Benchmark",
+      "definition": "Comparative analysis of how similar companies are priced by markets relative to financial performance and growth metrics.",
+      "example": "",
+      "category": "VALMET",
+      "id": 203,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Pension Funds",
+      "definition": "Investment pools managing retirement assets for defined benefit or defined contribution plans.",
+      "example": "",
+      "category": "INVEST",
+      "id": 11,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Phased Implementation",
+      "definition": "Gradual, staged approach to deploying new capabilities or systems.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 172,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Portfolio AI Optimization",
+      "definition": "Machine learning systems suggesting ideal asset allocations and position sizes to maximize returns given risk constraints.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 247,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Power BI Metrics",
+      "definition": "Business intelligence dashboards created using Microsoft Power BI to visualize investor relations data and performance indicators.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 276,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Predicting Market Response",
+      "definition": "Forecasting how investors and stock prices will react to company announcements or events.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 102,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Predictive Analytics",
+      "definition": "Data analysis techniques forecasting future outcomes based on historical patterns.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 100,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Predictive IR Analytics",
+      "definition": "Advanced statistical and machine learning methods forecasting investor behavior, market reactions, and engagement outcomes.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 211,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Press Release Drafting",
+      "definition": "Creating formal announcements distributed to media and investors regarding company news.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 22,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Preventing Selective Disclosure",
+      "definition": "Practices ensuring material information reaches all investors simultaneously through public channels.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 27,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Price To Earnings Ratio",
+      "definition": "Valuation metric dividing stock price by earnings per share, indicating how much investors pay for each dollar of profits.",
+      "example": "",
+      "category": "VALMET",
+      "id": 207,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Proc",
+      "definition": "uring AI Solutions Process of acquiring artificial intelligence technologies, products, or services from external vendors.",
+      "example": "",
+      "category": "OTHER",
+      "id": null,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Process Redesign Plans",
+      "definition": "Strategies for fundamentally rethinking and improving how work is accomplished.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 178,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Proof of Concept Design",
+      "definition": "Creating small-scale implementations to demonstrate feasibility and value of proposed approaches.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 156,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Protecting Personal Data",
+      "definition": "Measures safeguarding individually identifiable information from unauthorized access or use.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 135,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Providing Liquidity",
+      "definition": "Making markets by offering to buy or sell securities, facilitating trading for other market participants.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 108,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Proxy AI Support",
+      "definition": "Artificial intelligence tools assisting with proxy statement preparation, vote forecasting, and shareholder engagement during annual meetings.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 224,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Proxy Firm Simulations",
+      "definition": "Modeling tools predicting recommendations from institutional advisory firms like ISS and Glass Lewis on governance proposals.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 234,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Proxy Season Management",
+      "definition": "Coordination of activities surrounding annual shareholder meetings and voting processes.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 17,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Python Data Scripts",
+      "definition": "Programming code written in Python language for automating data analysis, visualization, and investor relations workflows.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 277,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Q&A Preparation Techniques",
+      "definition": "Methods for anticipating and practicing responses to likely investor and analyst questions.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 6,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Q4 Platform Features",
+      "definition": "Capabilities provided by Q4 Inc. investor relations management software including website hosting, analytics, and communications.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 215,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Quiet Period Guidelines",
+      "definition": "Rules limiting communications around sensitive times such as before earnings announcements.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 44,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Quiet Period Monitoring",
+      "definition": "Automated surveillance ensuring compliance with restrictions on communications before earnings announcements or securities offerings.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 232,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "R Statistical Analysis",
+      "definition": "Use of R programming language for statistical computing, data visualization, and analytical modeling in investor relations.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 278,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Real-Time Data Alerts",
+      "definition": "Automated notifications triggered by significant events, threshold breaches, or unusual patterns in monitored data streams.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 241,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Recognizing AI Bias",
+      "definition": "Identifying systematic errors or unfairness in artificial intelligence system outputs.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 84,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Recognizing Hallucinations",
+      "definition": "Detecting instances where AI systems generate false or fabricated information.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 81,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Reducing Hallucinations",
+      "definition": "Implementing techniques to minimize false information generation by AI systems.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 83,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Reg FD Compliance",
+      "definition": "Adherence to Regulation Fair Disclosure requiring simultaneous release of material information to all investors.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 26,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Reg FD Compliance AI",
+      "definition": "Artificial intelligence systems helping ensure adherence to Regulation Fair Disclosure requirements for equal information access.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 229,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "RegTech Applications",
+      "definition": "Technology solutions designed to facilitate regulatory compliance and risk management.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 143,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Regulation Fair Disclosure",
+      "definition": "SEC rule requiring public companies to disclose material information to all investors simultaneously. Regulation Fair Disclosure prevents selective disclosure to favored analysts or institutional investors, promoting equal information access for all market participants.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 25,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Reinforcement IR Learning",
+      "definition": "Machine learning approach where systems learn optimal investor relations strategies through trial, feedback, and reward mechanisms.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 294,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Response Time Analytics",
+      "definition": "Measurement and analysis of how quickly organizations respond to inquiries or events.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 130,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Responsible AI Practices",
+      "definition": "Ethical guidelines and procedures for developing and deploying artificial intelligence systems.",
+      "example": "",
+      "category": "AI-GOV",
+      "id": 79,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Retail Investor Metrics",
+      "definition": "Quantitative measures tracking individual investor ownership, trading patterns, and engagement behaviors.",
+      "example": "",
+      "category": "VALMET",
+      "id": 261,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Retail Investors",
+      "definition": "Individual investors who purchase securities for personal accounts rather than institutions.",
+      "example": "",
+      "category": "INVEST",
+      "id": 8,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Return On Equity Targets",
+      "definition": "Strategic goals for generating profits relative to shareholder equity, indicating capital efficiency and value creation.",
+      "example": "",
+      "category": "VALMET",
+      "id": 209,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Review Workflows",
+      "definition": "Defined processes for examining and approving materials, decisions, or actions before finalization.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 182,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Risk Assessment AI",
+      "definition": "Machine learning systems evaluating potential threats, vulnerabilities, and exposure levels across operational and strategic dimensions.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 246,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Risk Factor Disclosures",
+      "definition": "Required descriptions of potential threats and uncertainties that could negatively affect company performance.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 39,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Risk Management Frameworks",
+      "definition": "Structured approaches for identifying, assessing, and mitigating organizational threats.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 146,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Roadmap Prioritization",
+      "definition": "Process of ranking initiatives and determining sequence based on value, feasibility, and strategic importance.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 171,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Roadshow Optimization",
+      "definition": "Strategic planning and execution enhancement for management meetings with institutional investors, improving targeting and outcomes.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 226,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Roadshow Planning",
+      "definition": "Organizing investor meetings and presentations typically conducted when marketing new securities offerings.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 20,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Role-Based Access",
+      "definition": "Security approach granting system permissions based on user job functions and responsibilities.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 139,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Safe Harbor Provisions",
+      "definition": "Legal protections for forward-looking statements that meet specific disclosure requirements.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 41,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Salesforce IR Dashboards",
+      "definition": "Investor relations analytics and tracking interfaces built on Salesforce CRM platform for relationship and engagement management.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 274,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Sarbanes-Oxley Act",
+      "definition": "Federal law establishing requirements for corporate governance, financial disclosure, and audit practices.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 28,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Scenario AI Simulation",
+      "definition": "Computational modeling exploring how different situations, decisions, or events might unfold using artificial intelligence.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 245,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "SEC Filing Analytics",
+      "definition": "Automated analysis extracting insights, trends, and comparative data from regulatory filings submitted to the Securities and Exchange Commission.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 249,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Selecting AI Tools",
+      "definition": "Process of evaluating and choosing artificial intelligence technologies for specific use cases.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 155,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Selecting IR Platforms",
+      "definition": "Choosing technology systems to support investor relations activities and communications.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 198,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Sell-Side Analysts",
+      "definition": "Research professionals at investment banks who publish reports and recommendations on publicly traded companies.",
+      "example": "",
+      "category": "INVEST",
+      "id": 14,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Sentiment Analysis Tools",
+      "definition": "Software that automatically assesses attitudes, emotions, and opinions expressed in text or speech.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 91,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Sentiment Scoring Models",
+      "definition": "Algorithms assigning numerical ratings to text based on emotional tone and attitude.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 98,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Sentiment Vendor Tools",
+      "definition": "Third-party software platforms providing automated tone and opinion analysis from news, social media, and financial communications.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 219,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Setting Guidance Ranges",
+      "definition": "Establishing and communicating expected ranges for future financial performance.",
+      "example": "",
+      "category": "IR-OPS",
+      "id": 63,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Shareholder Activism AI",
+      "definition": "Tools analyzing, predicting, and responding to campaigns by investors seeking to influence corporate strategy, governance, or operations.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 233,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Shareholder Base Analysis",
+      "definition": "Examination of investor composition, including types, concentration, and trading patterns.",
+      "example": "",
+      "category": "VALMET",
+      "id": 52,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Shareholder Engagement",
+      "definition": "Proactive interactions with current and potential investors to understand perspectives and communicate strategy.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 16,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Shareholder Return Metrics",
+      "definition": "Measures quantifying value delivered to equity investors including stock price appreciation and dividends.",
+      "example": "",
+      "category": "VALMET",
+      "id": 57,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Short Interest Tracking",
+      "definition": "Monitoring shares borrowed and sold short, indicating bearish sentiment and potential for short squeeze dynamics.",
+      "example": "",
+      "category": "VALMET",
+      "id": 262,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Skills Gap Evaluation",
+      "definition": "Assessment identifying differences between current and needed capabilities across an organization.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 186,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Social Media Analytics",
+      "definition": "Automated measurement and interpretation of conversations, mentions, sentiment, and engagement across social platforms.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 254,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Sovereign Wealth Funds",
+      "definition": "Government-owned investment vehicles typically funded by commodity revenues or foreign exchange reserves.",
+      "example": "",
+      "category": "INVEST",
+      "id": 12,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "SOX Section 302",
+      "definition": "Sarbanes-Oxley requirement for executives to certify accuracy of financial reports and disclosure controls.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 29,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "SOX Section 404",
+      "definition": "Sarbanes-Oxley requirement for assessing and reporting on internal control effectiveness.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 30,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Stakeholder Identification",
+      "definition": "Process of determining which individuals or groups have interest in or influence over organizational decisions.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 160,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Stakeholder Mapping",
+      "definition": "Visual representation of stakeholder relationships, influence levels, and information needs.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 161,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Stock Price Volatility",
+      "definition": "Degree of variation in security prices over time, measuring investment risk and uncertainty.",
+      "example": "",
+      "category": "VALMET",
+      "id": 48,
+      "isCore": true,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Storytelling with Data",
+      "definition": "Communicating insights and messages by combining analytics with narrative techniques.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 164,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Supervised Data Models",
+      "definition": "Machine learning systems trained on labeled examples where correct outputs are known, learning to predict outcomes for new inputs.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 295,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Tableau IR Visuals",
+      "definition": "Data visualization dashboards created using Tableau software to display investor relations metrics and market intelligence.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 275,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Talent Strategy Planning",
+      "definition": "Developing approaches to attract, develop, and retain employees with needed capabilities.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 185,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Tesla IR Case Study",
+      "definition": "Strategic lessons from Tesla's unconventional investor relations approach including direct social media engagement and quarterly calls.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 279,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Text Mining Methods",
+      "definition": "Techniques for extracting meaningful information and patterns from large volumes of unstructured text.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 93,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Theranos IR Ethics",
+      "definition": "Cautionary lessons from Theranos regarding transparency, due diligence, and ethical obligations in investor communications about technology capabilities.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 285,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Third-Party Risk Strategy",
+      "definition": "Approach to identifying and managing threats associated with external vendors and partners.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 149,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Thomson Reuters Feeds",
+      "definition": "Real-time financial data, news, and analytics streams provided by Thomson Reuters for market intelligence and decision support.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 253,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Time-Sensitive Disclosures",
+      "definition": "Information releases where timing significantly affects market impact or regulatory compliance.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 110,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Tone Analysis Tools",
+      "definition": "Software assessing emotional character and attitude conveyed in written or spoken language.",
+      "example": "",
+      "category": "AI-CONT",
+      "id": 75,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Tracking Data Lineage",
+      "definition": "Documenting the origin, movements, transformations, and dependencies of data throughout its lifecycle.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 133,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Tracking Investor Outreach",
+      "definition": "Monitoring and recording interactions, meetings, and communications with investment community members.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 128,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Tracking Value Realization",
+      "definition": "Measuring actual benefits achieved from investments compared to projected outcomes.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 169,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Trading Pattern Analysis",
+      "definition": "Examination of buy and sell activity to identify trends, anomalies, and investor behavior.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 104,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Trading Volume Analysis",
+      "definition": "Examination of share transaction quantities to understand liquidity, investor interest, and market dynamics.",
+      "example": "",
+      "category": "VALMET",
+      "id": 201,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Trading Volume Metrics",
+      "definition": "Measures quantifying the number of shares or value of securities traded during specific periods.",
+      "example": "",
+      "category": "VALMET",
+      "id": 50,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Trading Window Rules",
+      "definition": "Policies specifying when insiders are permitted to trade company securities.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 45,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Understanding Tech Adoption",
+      "definition": "Comprehending patterns and factors affecting how organizations and individuals embrace new technologies.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 191,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Unsupervised Clustering",
+      "definition": "Machine learning techniques grouping similar data points without predefined categories, discovering natural patterns and segments.",
+      "example": "",
+      "category": "AI-TECH",
+      "id": 296,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "User Acceptance Testing",
+      "definition": "Process where end users evaluate whether systems meet requirements and function as intended in real-world conditions.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 192,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Valuation AI Modeling",
+      "definition": "Machine learning systems estimating company intrinsic value using diverse methodologies, data sources, and scenario assumptions.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 244,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Valuation Multiples",
+      "definition": "Financial ratios comparing company value to performance metrics, used for relative valuation.",
+      "example": "",
+      "category": "VALMET",
+      "id": 54,
+      "isCore": false,
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Vendor Due Diligence",
+      "definition": "Comprehensive assessment of external providers before establishing business relationships.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 152,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Vendor Risk Controls",
+      "definition": "Procedures mitigating threats associated with third-party suppliers and service providers.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 150,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Voice Tone Analysis",
+      "definition": "Automated assessment of emotional characteristics, confidence, and sentiment conveyed through speech patterns and vocal features.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 290,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Vote Solicitation Bots",
+      "definition": "Automated systems contacting shareholders, answering questions, and encouraging proxy voting participation ahead of annual meetings.",
+      "example": "",
+      "category": "AGENTIC",
+      "id": 237,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "VW Scandal Response",
+      "definition": "Crisis management lessons from Volkswagen's handling of emissions testing fraud regarding transparency, accountability, and stakeholder communication.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 284,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "WACC AI Calculations",
+      "definition": "Automated computation of weighted average cost of capital using machine learning to optimize assumptions and market-based inputs.",
+      "example": "",
+      "category": "ANLYT",
+      "id": 265,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Web Scraping Guidelines",
+      "definition": "Rules and best practices for automated extraction of publicly available information from websites for analysis.",
+      "example": "",
+      "category": "DATA-GOV",
+      "id": 256,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "WeWork IPO Analysis",
+      "definition": "Strategic lessons from WeWork's failed initial public offering regarding governance, valuation narratives, and investor skepticism.",
+      "example": "",
+      "category": "IR-FOUND",
+      "id": 286,
+      "isCore": false,
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Workflow Automation",
+      "definition": "Use of technology to execute routine tasks and processes without manual intervention.",
+      "example": "",
+      "category": "TRANSFORM",
+      "id": 179,
+      "isCore": false,
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "XBRL Reporting Standards",
+      "definition": "Technical specifications for structured, machine-readable financial reporting using eXtensible Business Reporting Language.",
+      "example": "",
+      "category": "REG-COMP",
+      "id": 37,
+      "isCore": false,
+      "difficulty": "beginner"
+    }
+  ]
+}

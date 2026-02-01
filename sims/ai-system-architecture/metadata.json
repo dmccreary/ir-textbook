@@ -1,0 +1,236 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "dublin_core": {
+    "title": "AI System Architecture: Agentic Systems with MCP",
+    "creator": "AI for Investor Relations Transformation Course",
+    "subject": ["Artificial Intelligence", "Agentic AI", "Model Context Protocol", "System Architecture", "Enterprise AI", "Investor Relations"],
+    "description": "Interactive network visualization of modern agentic AI system architecture using the Model Context Protocol (MCP). Shows components, data flows, and security layers required for deploying AI systems safely in enterprise investor relations contexts.",
+    "publisher": "Intelligent Textbook Series",
+    "date": "2025-01-19",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0"
+  },
+  "educational": {
+    "grade_level": "Executive/Professional Development (Graduate equivalent)",
+    "subject_area": "Technology - Enterprise AI Architecture & Governance",
+    "topic": "Agentic AI Systems and Model Context Protocol Implementation",
+    "learning_objectives": [
+      "Understand the components of a modern agentic AI system architecture",
+      "Analyze how the Model Context Protocol enables secure enterprise AI deployment",
+      "Evaluate the security and governance mechanisms required for AI in sensitive business contexts",
+      "Create architecture diagrams for proposed AI implementations in investor relations"
+    ],
+    "blooms_taxonomy": ["Understand", "Analyze", "Evaluate", "Create"],
+    "duration_minutes": 90,
+    "prerequisites": [
+      "Understanding of basic AI concepts (LLMs, prompts, responses)",
+      "Awareness of investor relations workflows and data needs",
+      "Familiarity with data governance concepts",
+      "Basic understanding of system architecture diagrams"
+    ],
+    "assessment_opportunities": [
+      "Can students identify and describe each component type?",
+      "Can they explain the purpose and benefits of MCP in enterprise AI?",
+      "Can they trace complete data flow from user request to response?",
+      "Can they design their own AI architecture for specific use cases?"
+    ]
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "latest from unpkg CDN",
+    "canvas_width": "100%",
+    "canvas_height": "1100px",
+    "responsive": "fully responsive",
+    "dependencies": ["vis-network standalone library from unpkg CDN"],
+    "accessibility_features": [
+      "Keyboard navigation support",
+      "Screen reader compatible node descriptions",
+      "High contrast color scheme for components",
+      "Detailed information panel for selected components"
+    ],
+    "browser_compatibility": ["Chrome", "Firefox", "Safari", "Edge"],
+    "mobile_friendly": "partial (best on desktop/tablet)"
+  },
+  "user_interface": {
+    "controls": [
+      {
+        "type": "button",
+        "name": "Full Architecture",
+        "description": "Show complete system architecture with all components",
+        "purpose": "Provides comprehensive view of entire AI system"
+      },
+      {
+        "type": "button",
+        "name": "MCP Focus",
+        "description": "Isolate Model Context Protocol components and data sources",
+        "purpose": "Demonstrates MCP's role in mediating data access"
+      },
+      {
+        "type": "button",
+        "name": "Data Flow",
+        "description": "Trace data flow from user request to response",
+        "purpose": "Shows end-to-end request processing pathway"
+      },
+      {
+        "type": "button",
+        "name": "Security Layers",
+        "description": "Highlight security and governance components",
+        "purpose": "Emphasizes authentication, authorization, audit mechanisms"
+      },
+      {
+        "type": "button",
+        "name": "Reset View",
+        "description": "Return to full architecture and reset zoom",
+        "purpose": "Restore default view configuration"
+      },
+      {
+        "type": "mouse_interaction",
+        "name": "Click Component",
+        "description": "Click any component to see detailed description",
+        "purpose": "Learn about specific architecture elements"
+      },
+      {
+        "type": "mouse_interaction",
+        "name": "Drag Component",
+        "description": "Click and drag nodes to reposition",
+        "purpose": "Explore architecture structure manually"
+      }
+    ],
+    "visualizations": [
+      {
+        "type": "network_diagram",
+        "description": "Force-directed graph showing system components as nodes and data flows as edges",
+        "purpose": "Visualize complex architecture relationships and data pathways"
+      },
+      {
+        "type": "color_coding",
+        "description": "Component types differentiated by color (Core AI=red, MCP=teal, Data=green, Tools=orange, Security=purple)",
+        "purpose": "Quick visual identification of component categories"
+      },
+      {
+        "type": "shape_coding",
+        "description": "Functional categories indicated by shapes (boxes=processing, diamonds=protocols, databases=storage, ellipses=tools)",
+        "purpose": "Convey component function through visual metaphor"
+      },
+      {
+        "type": "legend",
+        "description": "Color-coded legend mapping colors to component types",
+        "purpose": "Reference guide for visual encoding"
+      },
+      {
+        "type": "info_panel",
+        "description": "Detailed panel displaying component descriptions and technical specifications",
+        "purpose": "Provide educational context and implementation details"
+      }
+    ]
+  },
+  "simulation_model": {
+    "model_type": "System architecture diagram",
+    "methodology": "Network graph with force-directed layout representing enterprise AI architecture",
+    "component_categories": [
+      {
+        "category": "Core AI",
+        "components": ["LLM", "Agentic Layer"],
+        "description": "Foundation AI capabilities including language models and autonomous reasoning"
+      },
+      {
+        "category": "MCP Protocol",
+        "components": ["MCP Server", "MCP Client"],
+        "description": "Model Context Protocol implementation for standardized data access"
+      },
+      {
+        "category": "Data Sources",
+        "components": ["SEC EDGAR", "IR CRM", "Market Data", "Internal Databases"],
+        "description": "External and internal data sources accessed via MCP"
+      },
+      {
+        "category": "AI Tools",
+        "components": ["Sentiment Analysis", "Report Generation", "Q&A Prep", "Compliance Checker"],
+        "description": "Specialized AI capabilities extending core LLM functionality"
+      },
+      {
+        "category": "Security & Governance",
+        "components": ["Authentication", "Audit Trail"],
+        "description": "Access control and compliance logging mechanisms"
+      },
+      {
+        "category": "User Interface",
+        "components": ["IR Dashboard"],
+        "description": "Application layer where IR team interacts with AI"
+      }
+    ],
+    "data_flows": {
+      "user_request_flow": "UI → Agent → LLM → Agent → UI",
+      "data_retrieval_flow": "Agent → MCP Client → MCP Server → Data Source → MCP Server → MCP Client → Agent",
+      "security_flow": "UI → Authentication → Agent (authorized)",
+      "audit_flow": "Agent → Audit Trail, MCP Server → Audit Trail"
+    },
+    "key_architectural_patterns": [
+      "Agent orchestration with tool use",
+      "Standardized data access via MCP protocol",
+      "Multi-layered security (authentication, authorization, audit)",
+      "Separation of concerns (UI, logic, data, security)",
+      "Pluggable data sources and tools"
+    ],
+    "mcp_benefits": [
+      "Standardized protocol for AI-data integration",
+      "Built-in security and access control",
+      "Vendor-independent implementation",
+      "Modular architecture (add sources without code changes)",
+      "Centralized governance over data access"
+    ],
+    "assumptions": [
+      "Architecture represents typical enterprise deployment",
+      "MCP Server handles all data source integrations",
+      "Single LLM provider (can be extended to multiple)",
+      "Synchronous request/response pattern (async possible)"
+    ],
+    "limitations": [
+      "Simplified architecture (production systems more complex)",
+      "Does not show network infrastructure or deployment topology",
+      "Single-tenant architecture (multi-tenant requires additional isolation)",
+      "Does not detail caching, load balancing, or failover mechanisms",
+      "Omits integration with existing enterprise systems (SSO, monitoring, etc.)"
+    ]
+  },
+  "pedagogical_context": {
+    "course_chapter": "Chapter 10: Agentic AI Systems and MCP",
+    "related_concepts": [
+      "Agentic AI",
+      "Model Context Protocol (MCP)",
+      "Enterprise AI Architecture",
+      "AI Security and Governance",
+      "Tool Integration",
+      "Data Access Control",
+      "Audit Trails",
+      "LLM Orchestration"
+    ],
+    "instructional_strategy": "Interactive exploration with multiple filtered views progressing from overview to detailed analysis",
+    "cognitive_load": "High - complex system with many interrelated components",
+    "learning_progression": [
+      "Explore individual components and their purposes",
+      "Understand MCP protocol role in data mediation",
+      "Trace complete data flows through architecture",
+      "Analyze security and governance mechanisms",
+      "Synthesize learning by designing custom architectures"
+    ],
+    "common_misconceptions": [
+      "MCP is just another API (it's a standardized protocol with security/governance built-in)",
+      "Agentic AI is just chatbots (it's autonomous multi-step reasoning with tool use)",
+      "Direct LLM access to data is simpler (MCP provides essential security and governance)",
+      "Audit trails are optional overhead (required for compliance and debugging)",
+      "Architecture is one-size-fits-all (must be adapted to specific use cases and risk profiles)"
+    ]
+  },
+  "integration": {
+    "mkdocs_path": "/docs/sims/ai-system-architecture/",
+    "chapter_reference": "../../chapters/10-agentic-ai-systems-mcp/index.md",
+    "related_microsims": [],
+    "embedding_height": "1100px",
+    "fullscreen_link": "./main.html"
+  },
+  "version": "1.0.0",
+  "last_updated": "2025-01-19"
+}
