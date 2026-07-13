@@ -1,0 +1,209 @@
+{
+  "project": {
+    "title": "Investor Relations Textbook",
+    "subtitle": "Auto-scanned intelligent textbook",
+    "author": "Unknown",
+    "costPerMTokens": 15,
+    "sessionBudget": {
+      "pro": 900000,
+      "max": 3500000
+    }
+  },
+  "sections": {
+    "scaffold": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "course-description": {
+      "status": "published",
+      "tokensTarget": 4000,
+      "tokensDone": 1290
+    },
+    "learning-graph": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 20000
+    },
+    "chapter-structure": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 15000
+    },
+    "chapter-content": {
+      "countLabel": "15 chapters",
+      "children": [
+        {
+          "n": 1,
+          "title": "Foundations of Modern Investor Relations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 2,
+          "title": "Regulatory Frameworks and Compliance",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 3,
+          "title": "Investor Types and Market Dynamics",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 4,
+          "title": "Valuation Metrics and Performance Indicators",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 5,
+          "title": "AI and Machine Learning Fundamentals",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 6,
+          "title": "AI-Powered Content Creation",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 7,
+          "title": "Sentiment Analysis: Signals and Methods",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 8,
+          "title": "Predictive Analytics and Market Intelligence",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 9,
+          "title": "Personalized and Real-Time Investor Engagement",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 10,
+          "title": "Agentic AI Systems and Model Context Protocol",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 11,
+          "title": "AI Governance, Ethics, and Risk Management",
+          "status": "reviewed",
+          "tokens": 12909
+        },
+        {
+          "n": 12,
+          "title": "Data Governance and Security",
+          "status": "reviewed",
+          "tokens": 13904
+        },
+        {
+          "n": 13,
+          "title": "IR Platforms, Tools, and Case Studies",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 14,
+          "title": "Transformation Strategy and Change Management",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 15,
+          "title": "Future Outlook: Agentic Ecosystems and Next-Gen IR",
+          "status": "reviewed",
+          "tokens": 11511
+        }
+      ]
+    },
+    "chapter-images": {
+      "status": "not-started",
+      "tokensTarget": 8000,
+      "tokensDone": 0
+    },
+    "microsims": {
+      "countLabel": "5 simulations",
+      "children": [
+        {
+          "n": 1,
+          "title": "Ai System Architecture",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 2,
+          "title": "Graph Viewer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 3,
+          "title": "Investor Network Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 4,
+          "title": "Pe Ratio Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 5,
+          "title": "Sentiment Scoring Engine",
+          "status": "published",
+          "tokens": 5000
+        }
+      ]
+    },
+    "glossary": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 13654
+    },
+    "faq": {
+      "status": "published",
+      "tokensTarget": 14077,
+      "tokensDone": 14077
+    },
+    "quiz": {
+      "status": "published",
+      "tokensTarget": 39642,
+      "tokensDone": 39642
+    },
+    "reference": {
+      "status": "not-started",
+      "tokensTarget": 20000,
+      "tokensDone": 0
+    },
+    "teachers-guide": {
+      "status": "not-started",
+      "tokensTarget": 15000,
+      "tokensDone": 0
+    },
+    "book-metrics": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "publish": {
+      "status": "drafted",
+      "tokensTarget": 10000,
+      "tokensDone": 4500
+    },
+    "stories": {
+      "status": "not-started",
+      "tokensTarget": 30000,
+      "tokensDone": 0
+    }
+  }
+}
