@@ -24,7 +24,6 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -43,6 +42,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - toc:
       permalink: true
@@ -53,6 +55,7 @@ nav:
   - Glossary: glossary.md
   - FAQ: faq.md
   - References: references.md
+  - Feature Checklist: feature-checklist.md
   - Learning Graph:
       - Introduction: learning-graph/index.md
       - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -118,3 +121,7 @@ nav:
           - "Chapter 15 - Future: Agentic Ecosystems":
               - Content: chapters/15-future-agentic-ecosystems/index.md
               - Quiz: chapters/15-future-agentic-ecosystems/quiz.md
+extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Investor Relations Textbook
+  textbook_version: "1.0"
